@@ -1,0 +1,135 @@
+#main-card-ttrpg {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    height: 100%;
+    text-align: center;
+}
+
+#main-card-art {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    height: 100%;
+    text-align: center;  
+}
+
+.lib-catalogue {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    margin: 12px;
+    padding: 12px;
+    text-align: center;
+}
+
+.lib-item {
+    height: auto;
+    width: auto;
+    min-width: 300px;
+    background-color: whitesmoke;
+}
+
+.lib-item-display{
+    height: 300px;
+    width: 300px;
+    padding-top: 150px;
+    margin: auto;
+}
+
+.lib-item-label {
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+#nav-option-tools {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+}
+
+#nav-tools {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#nav-option-homebrew {
+    grid-column: 1;
+    grid-row: 3;
+    text-align: center;
+}
+
+#nav-homebrew {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+#nav-option-adventures {
+    grid-column: 1;
+    grid-row: 5;
+    text-align: center;
+}
+
+#nav-adventures {
+    grid-column: 1;
+    grid-row: 6;
+}
+
+#nav-option-publications {
+    grid-column: 1;
+    grid-row: 7;
+    text-align: center;
+}
+
+#nav-option-trl {
+    grid-column: 1;
+    grid-row: 8;
+    text-align: center;
+}
+
+/* styles for D&D page */
+
+.nav-menu {
+    display: none;
+}
+
+
+.nav-menu-option {
+    display: block;
+    text-transform: uppercase;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    margin: 1px 1px 1px 1px;
+    border: 2px groove #777;
+}
+
+.nav-menu-option:hover {
+    background-color: brown;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.nav-option {
+    color: #000;
+    text-transform: uppercase;
+    background-size: cover;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px;
+    margin: 1px;
+    border: 2px outset #35281D;
+}
+
+.nav-option:hover {
+    background-color: brown;
+}
+
+.nav-option:active {
+    background-color: brown;
+    color: #333;
+}

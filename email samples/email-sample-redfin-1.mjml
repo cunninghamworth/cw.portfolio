@@ -1,0 +1,97 @@
+<mjml>
+    <mj-head>
+        <mj-breakpoint width="829px" />
+        <mj-attributes>
+            <mj-all color="#333333" font-family="Arial" padding="0"/>
+            
+            <mj-class name="body-text" font-size="16px" line-height="1.4" />
+        </mj-attributes>
+        <mj-style inline="inline">
+            .text-large {
+               color: #585858;
+               font-size: 24px;
+               line-height: 1.3;
+               padding: 0 0 8px; 
+            }
+
+            .text-blue {
+                color: #1080a2;
+            }
+
+            .text-red {
+                color: #c82021;
+            }
+        </mj-style>
+        <mj-style>
+
+        </mj-style>
+    </mj-head>
+    <mj-body background-color="#f5f5f5">
+        <mj-wrapper>
+            <!-- Company Header -->
+            <mj-section>
+                <mj-group>
+                    <mj-column padding="20px">
+                        <mj-image src="/email-images/logo-redfin-1.png" alt="logo" width="100px" height="26px"/>
+                    </mj-column>
+                </mj-group>
+            </mj-section>
+            <!-- End Company Header -->
+            <!-- Email Header -->
+            <mj-section>
+                <mj-column background-color="#f5f5f5" width="360px">
+                    <mj-text align="center" mj-class="body-text">
+                        <span class="text-large">New Listing at <strong>$290,000</strong></span>
+                    </mj-text>
+                    <mj-spacer height="8px" />
+                    <mj-text align="center" mj-class="body-text">
+                        We think you'll like this home, listed yesterday in Simpson Addition!
+                    </mj-text>
+                </mj-column>
+            </mj-section>
+            <!-- End Email Header -->
+            <!-- Hero -->
+            <mj-section>
+                <mj-column background-color="#f5f5f5" width="360px">
+                    <mj-image src="/email-images/image-hero-property-1.jpg" width="386px" height="276px" alt="hero image" padding="16px 0 10px"/>
+                </mj-column>
+            </mj-section>
+            <!-- End Hero -->
+            <!-- Main Content -->
+            <!-- Redfin Labels -->
+            <mj-section>
+                <mj-group>
+                    <mj-column width="70px">
+                        <mj-text css-class="redfin-new" align="center" padding="2px 12px">
+                            NEW
+                        </mj-text>
+                    </mj-column>
+                    <mj-column width="258px">
+                        <mj-text css-class="redfin-listed-by" align="center" padding="2px 12px">
+                            LISTED BY REDFIN
+                        </mj-text>
+                    </mj-column>
+                </mj-group>
+            </mj-section>
+            <!-- End Redfin Labels -->
+            <mj-section>
+                <mj-column width="360px">
+                    <mj-text mj-class="body-text" padding-top="10px">
+                        <strong>$290,000</strong> <br>
+                        3 Beds · 2 Baths · 1,120 Sq. Ft. <br>
+                        <a class="text-blue body-anchor-text" href="https://www.example.com" target="_blank" >340 24th St SE, Salem, OR 97301</a> 
+                    </mj-text>
+                </mj-column>
+            </mj-section>
+            <!-- End Main Content -->
+            <!-- Socials -->
+            <!-- End Socials -->
+        </mj-wrapper>
+
+
+        <!-- Company Footer -->
+        <!-- End Company Footer -->
+
+
+    </mj-body>
+</mjml>

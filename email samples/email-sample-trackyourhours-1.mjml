@@ -1,0 +1,148 @@
+<mjml>
+    <mj-head>
+        <mj-breakpoint width="600px" />
+        <mj-attributes>
+            <mj-all padding="0px" />
+            <mj-text font-family="'-apple-system',BlinkMacSystemFont,Roboto,'Oxygen-Sans',Ubuntu,'Helvetica Neue',Arial,sans-serif;" align="left" font-size="10px" line-height="12px" color="#000000" padding="0px"/>
+            <mj-image padding="0px" href="https//www.example.com"/>
+            <mj-section padding="0px" background-color="#f9f6f2"/>
+            <mj-body background-color="#ffffff"/>
+
+            <mj-class name="content-header" font-size="24px" color="#333333" font-weight="bold" line-height="150%" letter-spacing="0" word-break="break-word"/>
+            <mj-class name="content-text" font-family="Helvetica" font-size="16px" color="#333333" line-height="150%" letter-spacing="0" word-break="break-word"/>
+            <mj-class name="info-text" font-family="Helvetica" font-size="16px" color="#333333" font-weight="bold" line-height="150%"/>
+            <mj-class name="btn" background-color="#f28671" inner-padding="16px 24px"/>
+        </mj-attributes>
+        <mj-style inline="inline">
+            a {
+                color: #000000;
+                text-decoration: none;
+            }
+
+            .anchor-menu {
+                text-transform: uppercase;
+                font-size: 11px;
+                line-height: 12px;
+                letter-spacing: 2px;
+                font-weight: 700;
+                text-align: center;
+            }
+
+            .anchor-btn {
+                font-size: 16px;
+                color: #ffffff;
+                line-height: 20px;
+                font-weight: 400;
+                text-align: center;
+                font-family: '-apple-system',BlinkMacSystemFont,Roboto,'Oxygen-Sans',Ubuntu,'Helvetica Neue',Arial,sans-serif;
+            }
+
+            .anchor-footer {
+                color: #B9B39D;
+                text-decoration: underline;
+            }
+
+        </mj-style>
+        <mj-style>
+
+        </mj-style>
+    </mj-head>
+    <mj-body width="600px">
+        <mj-wrapper background-color="#f9f6f2">
+            <!-- Company Header -->
+            <mj-section padding="35px">
+                <mj-column width="50%">
+                    <mj-image src="email-images/trackyourhours/logo.png" alt="track your hours logo" width="183px" align="center"/>
+                </mj-column>
+                <mj-column width="50%">
+                    <mj-text align="center" padding-top="5px">
+                        <a href="https://www.example.com" class="anchor-menu">Features&nbsp</a> |
+                        <a href="https://www.example.com" class="anchor-menu">&nbspPRICING&nbsp</a> |
+                        <a href="https://www.example.com" class="anchor-menu">&nbspFAQ</a>
+                    </mj-text>
+                </mj-column>
+            </mj-section>
+            <!-- End Company Header -->
+            <!-- Main Content -->
+            <mj-section padding-left="40px" padding-right="40px" padding-bottom="30px">
+                <mj-column>
+                    <mj-image src="/email-images/trackyourhours/hero.png" alt="hero image" width="484px"/>
+                </mj-column>
+            </mj-section>
+            <mj-section padding-left="40px" padding-right="40px">
+                <mj-column >
+                    <mj-text mj-class="content-header" padding="0px 18px 20px">
+                        Monotasking: How We Reclaim Our Attention
+                    </mj-text>
+                    <mj-text mj-class="content-text" padding="0px 18px 20px">
+                        We seem to be busier than ever. Many of us are pulled in multiple directions. 
+                        And as aspiring practitioners and potential business owners, that demand for your time will likely increase. 
+                        So how can you pursue your aspirations without getting distracted? What would it look like if you gave your whole attention to just one thing at a time? 
+                        Learn more about how monotasking can help you do what you love in a more sustainable way. 
+                    </mj-text>
+                    <mj-button href="https://www.example.com" target="_blank" align="left" mj-class="btn" padding="10px 18px 18px 18px" width="150px">
+                        <a href="https://www.example.com" class="anchor-btn">Read More</a>
+                    </mj-button>
+                    <mj-divider padding="25px 20px" border-color="#333333" border-style="solid" border-width="1px"/>
+                </mj-column>
+            </mj-section>
+            <mj-section padding-left="40px" padding-right="40px">
+                <mj-column width="50%" padding="15px 15px 0px">
+                    <mj-image src="/email-images/trackyourhours/image-2.jpg" alt="article image" align="left"/>
+                    <mj-text mj-class="content-header" padding-top="20px" padding-bottom="20px">
+                        Breaking the Binge Eating Cycle
+                    </mj-text>
+                    <mj-text mj-class="content-text" padding-bottom="24px">
+                        Although binge eating is one of the most common forms of disordered eating, many clients feel ashamed to bring it up in therapy. In this course, 
+                        you'll learn how to help your clients talk openly and comfortably about their eating, how to assess for binge eating symptoms, 
+                        and how to use evidence-based strategies to break the binge eating cycle
+                    </mj-text>
+                    <mj-text mj-class="info-text" padding-bottom="14px">
+                        <em>2 hours CE, $29</em>
+                    </mj-text>
+                    <mj-button href="https://www.example.com" target="_blank" align="left" mj-class="btn" padding="30px 15px 30px 0px" width="150px">
+                        <a href="https://www.example.com" class="anchor-btn">Take Course</a>
+                    </mj-button>
+                </mj-column>
+                <mj-column width="50%" padding="15px 15px 0px">
+                    <mj-image src="/email-images/trackyourhours/image-1.png" alt="article image" align="left"/>
+                    <mj-text mj-class="content-header" padding-top="20px" padding-bottom="20px">
+                        Support Kids Through Divorce
+                    </mj-text>
+                    <mj-text mj-class="content-text" padding-bottom="24px">
+                        Therapists who work with children often see first-hand the challenges that divorce creates for them. 
+                        This course will give you the tools you need to support children through and after divorce, separation, and restructuring. 
+                        You'll learn how to address common internalizing and externalizing behaviors, problematic parental behaviors, and more.
+                    </mj-text>
+                    <mj-text mj-class="info-text" padding-bottom="14px">
+                        <em>2 hours CE, $29</em>
+                    </mj-text>
+                    <mj-button href="https://www.example.com" target="_blank" align="left" mj-class="btn" padding="30px 15px 30px 0px" width="150px">
+                        <a href="https://www.example.com" class="anchor-btn">Take Course</a>
+                    </mj-button>
+                </mj-column>
+                <mj-column width="100%">
+                    <mj-divider padding="25px 20px" border-color="#333333" border-style="solid" border-width="1px"/>
+                </mj-column>
+            </mj-section>
+            <!-- End Main Content -->
+            <!-- Footer -->
+            <mj-section padding-left="40px" padding-right="40px"> 
+                <mj-column>
+                    <mj-text align="center" color="#bbbbbb" font-size="16px" font-family="Helvetica" line-height="150%" padding-top="40px 18px 9px 18px">
+                        Track Your Hours, LLC, 2022 • All rights reserved. <br>
+                        <a class="anchor-footer" href="https://www.example.com" target="_blank">View this email in your browser</a> <br>
+                        <br>
+                        Want to change how you receive these emails?<br>
+                        You can <a class="anchor-footer" href="https://www.example.com" target="_blank">unsubscribe from this list</a> or 
+                        <a class="anchor-footer" href="https://www.example.com" target="_blank">unsubscribe from all emails</a><br>
+                        <br>
+                        For CE courses, complete course information, including applicable CE approvals and policies on refunds, 
+                        grievances, and accommodations, is available at the link provided.
+                    </mj-text>
+                </mj-column>
+            </mj-section>
+            <!-- End Footer -->
+        </mj-wrapper>
+    </mj-body>
+</mjml>

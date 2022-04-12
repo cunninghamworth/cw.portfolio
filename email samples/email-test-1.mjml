@@ -1,0 +1,250 @@
+<mjml>
+  <mj-head>
+    <mj-breakpoint width="600px"/>
+    <mj-attributes>
+        <mj-all color="#2c2c2c" font-family="Arial" padding="0" />
+        
+        
+        <mj-class name="body-text" font-size="14px" line-height="22px" />
+        <mj-class name="list-text" padding-top="10px" font-size="14px" line-height="28px" />
+        <mj-class name="footer-text" font-size="12px" line-height="18px" />
+        <mj-class name="btn" inner-padding="7px 103px" border-radius="8px" align="center" font-size="14px" font-weight="500" line-height="22px" fluid-on-mobile="true"/>
+        
+        
+        <mj-class name="benefit" padding="20px 5px 0 5px"/>
+        <mj-class name="benefit-img" align="center" width="100px" height="100px"/>
+        <mj-class name="benefit-title" align="center" padding-top="15px" font-size="14px" font-weight="700" line-height="18px"/>
+        <mj-class name="benefit-content" align="center" padding-top="10px" font-size="12px" line-height="18px"/>
+    </mj-attributes>
+
+    <mj-style inline="inline">
+        .body-anchor-text {
+            display: inline;
+            color: #007bff;
+            font-size: 14px;
+            line-height: 22px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .footer-anchor-text {
+            display: inline;
+            color: #2c2c2c;
+            font-size: 12px;
+            line-height: 18px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .text-gray {
+            color: #6c757d;
+        }
+
+        .text-blue {
+            color: #007bff;
+        }
+
+    </mj-style>
+
+    <mj-style>
+        .body-anchor-text:hover,
+        .footer-anchor-text:hover {
+            text-decoration: underline !important;
+        }
+
+        .btn-dark-outline:hover a, 
+        .btn-dark-outline:hover td, 
+        .btn-dark:hover a,
+        .btn-dark:hover td {
+            color: #ffffff !important;
+            background-color: #212529 !important;
+            border-color: #212529 !important;
+        }
+
+        @media only screen and (max-width:599px) {
+            .campany-footer-img {
+                padding-top: 20px !important;
+                text-align: left !important;
+            }
+
+            .footer {
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+            }
+
+
+        }
+
+    </mj-style>
+
+  </mj-head>
+  <mj-body background-color="#f2f2f2">
+    <!-- Email Title -->
+    
+    <mj-section>
+    	<mj-group background-color="#ffffff">
+      	<mj-column>
+          <mj-text align="center" color="#999999" padding="5px 0"  font-size="10px" line-height="18px">			
+          	Lorem ipsum dolor sit amet.
+          </mj-text>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+    
+    <!-- End Email Title -->
+    
+    <!-- Company Header -->
+    <mj-section>
+      <mj-group>
+      	<mj-column background-color="#ffffff" padding="20px">
+        	<mj-image src="https://via.placeholder.com/130x35.png?text=logo" alt="logo" width="130px" height="25px"/>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+		
+    <!-- End Company Header -->
+    
+    <!-- Hero Image -->
+    <mj-section>
+      <mj-group>
+      	<mj-column>
+        	<mj-image src="https://via.placeholder.com/600x300.png?text=hero" alt="hero image"/>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+		
+    <!-- End Hero Image -->
+    
+<!-- Main Content -->
+    <mj-section background-color="#ffffff">
+        <mj-group>
+            <mj-column padding="20px">
+                <mj-text mj-class="body-text">
+                    Hi <strong>NAME</strong>, <br><br>
+                    Donec eget tempor lectus, vel luctus massa. 
+                    Ut et ex pretium, finibus ipsum non, dignissim dui. 
+                    Mauris ultricies ante in semper luctus. 
+                    In congue ultrices urna, vitae suscipit lorem elementum nec. 
+                    Morbi ac luctus nisl. Donec consequat enim ac quam auctor gravida. 
+                </mj-text>
+                <mj-text mj-class="list-text">
+                    1. Vivamus et feugiat neque. 
+                </mj-text>
+                <mj-text mj-class="list-text">
+                    2. Mauris felis eros, gravida ut auctor at, condimentum a neque. 
+                </mj-text>
+                <mj-text mj-class="list-text">
+                    3. Phasellus semper augue eleifend nisl mattis semper. 
+                </mj-text>
+                <mj-text mj-class="list-text">
+                    4. Quisque ornare est varius sem finibus gravida. 
+                </mj-text>
+                <mj-text mj-class="list-text">
+                    5. Sed cursus tincidunt ultrices.
+                </mj-text>
+                <mj-button css-class="btn-dark-outline" href="https://www.example.com" target="_blank" mj-class="btn" padding-top="20px" color="#343a40" background-color="transparent" border="1px solid #343a40">
+                    Button One
+                </mj-button>
+                <mj-text mj-class="body-text" padding-top="20px">
+                    Fusce eget faucibus velit. Fusce consectetur interdum luctus. <br>
+                    Maecenas sapien turpis, <a href="https://www.example.com" target="_blank" class="body-anchor-text">congue eu mauris nec</a>, eleifend hendrerit velit.
+                </mj-text>
+            </mj-column>
+        </mj-group>
+    </mj-section>    
+
+<!-- End Main Content -->
+
+<!-- Benefits -->
+    <mj-wrapper background-color="#ffffff" padding="20px 20px 20px">
+        <mj-section background-color="#e2e3e5" border-radius="5px 5px 0 0">
+            <mj-group>
+                <mj-column padding="20px 0 0">
+                    <mj-text align="center" font-size="16px" font-weight="700" line-height="22px">
+                        Proin convallis, elit id faucibus dictum.
+                    </mj-text>
+                </mj-column>
+            </mj-group>
+        </mj-section>
+        <mj-section background-color="#e2e3e5" padding="0 15px">
+            <mj-column mj-class="benefit">
+                <mj-image src="https://via.placeholder.com/100x100?text=image-1" alt="image1" />
+                <mj-text mj-class="benefit-title">
+                    Eros ante venenatis leo
+                </mj-text>
+                <mj-text mj-class="benefit-content">
+                    Integer ullamcorper, nisi quis dapibus ultrices, nisl est vulputate felis, eu elementum lorem ligula id mauris.
+                </mj-text>
+            </mj-column>
+            <mj-column mj-class="benefit">
+                <mj-image src="https://via.placeholder.com/100x100?text=image-2" alt="image2" />
+                <mj-text mj-class="benefit-title">
+                    Eros ante venenatis leo
+                </mj-text>
+                <mj-text mj-class="benefit-content">
+                    Integer ullamcorper, nisi quis dapibus ultrices, nisl est vulputate felis, eu elementum lorem ligula id mauris.
+                </mj-text>
+            </mj-column>
+            <mj-column mj-class="benefit">
+                <mj-image src="https://via.placeholder.com/100x100?text=image-3" alt="image3" />
+                <mj-text mj-class="benefit-title">
+                    Eros ante venenatis leo
+                </mj-text>
+                <mj-text mj-class="benefit-content">
+                    Integer ullamcorper, nisi quis dapibus ultrices, nisl est vulputate felis, eu elementum lorem ligula id mauris.
+                </mj-text>
+            </mj-column>
+        </mj-section>
+        <mj-section background-color="#e2e3e5" border-radius="0 0 5px 5px"> 
+            <mj-group>
+                <mj-column>
+                    <mj-button href="https://www.example.com" target="_blank" css-class="btn-dark" mj-class="btn" padding="35px 15px 20px" color="#ffffff" background-color="#343a40">
+                        Button Two
+                    </mj-button>
+                </mj-column>
+            </mj-group>
+        </mj-section>
+    </mj-wrapper>
+
+<!-- End Benefits -->
+
+<!-- Company Footer -->
+    <mj-section border-top="2px solid #343a40" background-color="#e2e3e5" padding="15px 20px">
+        <mj-column>
+            <mj-text mj-class="body-text">
+                Vestibulum elementum ligula sem, <br>
+                <span class="text-gray">ac rhoncus arcu faucibus ac.</span>    
+            </mj-text>
+        </mj-column>
+        <mj-column>
+            <mj-image css-class="campany-footer-img" src="https://via.placeholder.com/93x25?text=logo" alt="logo" width="93px" height="25px" align="right" padding="10px 0"/>
+        </mj-column>
+    </mj-section>
+<!-- End Company Footer -->
+<!-- Footer -->
+    <mj-section>
+        <mj-group>
+            <mj-column css-class="footer" padding="20px 0">
+                <mj-text mj-class="footer-text">
+                    <strong>Aenean condimentum fermentum risus eu ullamcorper. </strong> 
+                    <a href="mailto:contact@example.com" class="footer-anchor-text text-blue">contact@example.com</a>
+                </mj-text>
+                <mj-text mj-class="footer-text" padding-top="15px">
+                    <a href="https://www.example.com" target="_blank" class="footer-anchor-text text-gray">Terms of Service</a>
+                    |
+                    <a href="https://www.example.com" target="_blank" class="footer-anchor-text text-gray">Privacy Policy</a>
+                </mj-text>
+                <mj-text mj-class="footer-text" padding-top="5px">
+                    Copyright © 2022 | All Rights Reserved. <br>
+                    Maecenas aliquam - erat a tellus facilisis varius. <br>
+                    Nullam semper venenatis lacus 12345. | Call 
+                    <a href="tel:001234567" class="footer-anchor-text">+00 123 4567</a>
+                </mj-text>
+            </mj-column>    
+        </mj-group>
+    </mj-section>
+
+<!-- End Footer -->
+
+  </mj-body>
+</mjml>

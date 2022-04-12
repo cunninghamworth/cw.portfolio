@@ -1,0 +1,238 @@
+<mjml>
+    <mj-head>
+        <mj-attributes>
+            <mj-font name="Arial" />
+            <mj-attributes>
+                <mj-all padding="0px" />
+                <mj-breakpoint width="600px" />
+                <mj-text font-family="Arial" align="left" font-size="10px" line-height="12px" color="#000000" padding="0px"/>
+                <mj-image padding="0px" href="https//www.example.com"/>
+                <mj-section padding="0px"/>
+                <mj-body background-color="#ffffff"/>
+                <mj-column width="570px" padding="0px"/>
+            </mj-attributes>
+        </mj-attributes>
+        <mj-style inline="inline">
+            a {
+                color: #000000;
+            }
+        </mj-style>
+        <mj-style>
+
+        </mj-style>
+    </mj-head>
+    <mj-body background-color="#ffffff">
+        <!-- Company Header -->
+        <mj-section padding="0px">
+            <mj-column width="570px">
+                <mj-image src="/email-images/walkingco/logo.jpg" alt="logo" padding="0" href="https//www.example.com"/>
+            </mj-column>
+        </mj-section>
+        <!-- End Company Header -->
+        <!-- Main Content -->
+        <mj-section padding="0px">
+            <mj-column width="570px">
+                <mj-image src="/email-images/walkingco/promo-1.jpg" alt="promo 1" padding="0" href="https//www.example.com"/>
+            </mj-column>
+        </mj-section>
+        <mj-section padding="0px">
+            <mj-column width="570px">
+                <mj-image src="/email-images/walkingco/markdown.jpg" alt="markdown" padding="0" href="https//www.example.com"/>
+            </mj-column>
+        </mj-section>
+        <mj-section padding="0px">
+            <mj-column width="570px">
+                <mj-image src="/email-images/walkingco/boots.jpg" alt="boots heading" padding="0" href="https//www.example.com"/>
+            </mj-column>
+        </mj-section>
+        <mj-section padding="0px">
+            <mj-column>
+                <mj-image src="/email-images/walkingco/boots-1.jpg" alt="boots 1" padding="0" href="https//www.example.com"/>
+            </mj-column>
+            <mj-column>
+                <mj-image src="/email-images/walkingco/boots-2.jpg" alt="boots 2" padding="0" href="https//www.example.com"/>
+            </mj-column>
+            <mj-column>
+                <mj-image src="/email-images/walkingco/boots-3.jpg" alt="boots 3" padding="0" href="https//www.example.com"/>
+            </mj-column>
+        </mj-section  padding="0px">
+        <mj-section>
+            <mj-column>
+                <mj-image src="/email-images/walkingco/dress.jpg" alt="dress heading" padding="0" href="https//www.example.com"/>
+            </mj-column>
+        </mj-section>
+        <mj-section padding="0px">
+            <mj-column>
+                <mj-image src="/email-images/walkingco/dress-1.jpg" alt="dress 1" padding="0" href="https//www.example.com"/>
+            </mj-column>
+            <mj-column>
+                <mj-image src="/email-images/walkingco/dress-2.jpg" alt="dress 2" padding="0" href="https//www.example.com"/>
+            </mj-column>
+            <mj-column>
+                <mj-image src="/email-images/walkingco/dress-3.jpg" alt="dress 3" padding="0" href="https//www.example.com"/>
+            </mj-column>
+        </mj-section>
+        <mj-section padding="0px">
+            <mj-column>
+                <mj-image src="/email-images/walkingco/mens.jpg" alt="mens heading" padding="0" href="https//www.example.com"/>
+            </mj-column>
+        </mj-section>
+        <mj-section padding="0px">
+            <mj-column>
+                <mj-image src="/email-images/walkingco/mens-1.jpg" alt="mens 1" padding="0" href="https//www.example.com"/>
+            </mj-column>
+            <mj-column>
+                <mj-image src="/email-images/walkingco/mens-2.jpg" alt="mens 2" padding="0" href="https//www.example.com"/>
+            </mj-column>
+            <mj-column>
+                <mj-image src="/email-images/walkingco/mens-3.jpg" alt="mens 3" padding="0" href="https//www.example.com"/>
+            </mj-column>
+        </mj-section>
+        <mj-section padding="0px">
+            <mj-column width="570px">
+                <mj-image src="/email-images/walkingco/promo-2.jpg" alt="promo 2" padding="0" href="https//www.example.com"/>
+            </mj-column>
+        </mj-section>
+        <mj-section padding="0px">
+            <mj-column width="570px">
+                <mj-image src="/email-images/walkingco/shopsize.jpg" alt="shop your size" padding="0" href="https//www.example.com"/>
+            </mj-column>
+        </mj-section>
+        <mj-section padding="0px">
+            <mj-group>
+                <mj-column>
+                    <mj-image src="/email-images/walkingco/size5.jpg" alt="size 5" padding="0" href="https//www.example.com"/>
+                </mj-column>
+                <mj-column>
+                    <mj-image src="/email-images/walkingco/size55.jpg" alt="size 5.5" padding="0" href="https//www.example.com"/>
+                </mj-column>
+                <mj-column>
+                    <mj-image src="/email-images/walkingco/size6.jpg" alt="size 6" padding="0" href="https//www.example.com"/>
+                </mj-column>
+                <mj-column>
+                    <mj-image src="/email-images/walkingco/size65.jpg" alt="size 6.5" padding="0" href="https//www.example.com"/>
+                </mj-column>
+            </mj-group>
+        </mj-section>
+        <mj-section padding="0px">
+            <mj-group>
+                <mj-column>
+                    <mj-image src="/email-images/walkingco/size7.jpg" alt="size 7" padding="0" href="https//www.example.com"/>
+                </mj-column>
+                <mj-column>
+                    <mj-image src="/email-images/walkingco/size75.jpg" alt="size 7.5" padding="0" href="https//www.example.com"/>
+                </mj-column>
+                <mj-column>
+                    <mj-image src="/email-images/walkingco/size8.jpg" alt="size 8" padding="0" href="https//www.example.com"/>
+                </mj-column>
+                <mj-column>
+                    <mj-image src="/email-images/walkingco/size85.jpg" alt="size 8.5" padding="0" href="https//www.example.com"/>
+                </mj-column>
+            </mj-group>
+        </mj-section>
+        <mj-section padding="0px">
+            <mj-group>
+                <mj-column>
+                    <mj-image src="/email-images/walkingco/size9.jpg" alt="size 9" padding="0" href="https//www.example.com"/>
+                </mj-column>
+                <mj-column>
+                    <mj-image src="/email-images/walkingco/size95.jpg" alt="size 9.5" padding="0" href="https//www.example.com"/>
+                </mj-column>
+                <mj-column>
+                    <mj-image src="/email-images/walkingco/size10.jpg" alt="size 10" padding="0" href="https//www.example.com"/>
+                </mj-column>
+                <mj-column>
+                    <mj-image src="/email-images/walkingco/size105.jpg" alt="size 10.5" padding="0" href="https//www.example.com"/>
+                </mj-column>
+            </mj-group>
+        </mj-section>
+        <mj-section padding="0px">
+            <mj-group>
+                <mj-column>
+                    <mj-image src="/email-images/walkingco/size11.jpg" alt="size 11" padding="0" href="https//www.example.com"/>
+                </mj-column>
+                <mj-column>
+                    <mj-image src="/email-images/walkingco/size115.jpg" alt="size 11.5" padding="0" href="https//www.example.com"/>
+                </mj-column>
+                <mj-column>
+                    <mj-image src="/email-images/walkingco/size12.jpg" alt="size 12" padding="0" href="https//www.example.com"/>
+                </mj-column>
+                <mj-column>
+                    <mj-image src="/email-images/walkingco/size13.jpg" alt="size 13" padding="0" href="https//www.example.com"/>
+                </mj-column>
+            </mj-group>
+        </mj-section>
+        <mj-section padding="0px">
+            <mj-column width="570px">
+                <mj-image src="/email-images/walkingco/shopclearance.jpg" alt="shop clearance" padding="0"/>
+            </mj-column>
+            <mj-column width="570px">
+                <mj-image src="/email-images/walkingco/shopwomens.jpg" alt="shop womens" padding="0"/>
+            </mj-column>
+            <mj-column width="570px">
+                <mj-image src="/email-images/walkingco/shopmens.jpg" alt="shop mens" padding="0"/>
+            </mj-column>
+        </mj-section>
+        <mj-section padding="0px">
+            <mj-column width="570px">
+                <mj-image src="/email-images/walkingco/addproduct-1.jpg" alt="shop your size" padding="0" href="https//www.example.com"/>
+            </mj-column>
+        </mj-section>
+        <mj-section padding="0px">
+            <mj-column width="570px">
+                <mj-image src="/email-images/walkingco/quote.jpg" alt="quote: 'I don't know where I'm going, but I primise it won't be boring.' - David Bowie" padding="0" href="https//www.example.com"/>
+            </mj-column>
+        </mj-section>
+        <!-- End Main Content -->
+        <!-- Socials -->
+        <mj-section padding="0px">
+            <mj-group>
+                <mj-column width="50%">
+                    <mj-image src="/email-images/walkingco/social-fb.png" alt="shop your size" padding="0" href="https//www.example.com" width="32px" align="right" padding-top="10px" padding-bottom="10px" padding-right="2.5px"/>
+                </mj-column>
+                <mj-column width="50%">
+                    <mj-image src="/email-images/walkingco/social-ig.png" alt="shop your size" padding="0" href="https//www.example.com" width="32px" align="left" padding-top="10px" padding-bottom="10px" padding-right="2.5px"/>
+                </mj-column>
+            </mj-group>
+        </mj-section>
+        <!-- End Socials -->
+        <!-- Company Footer -->
+        <mj-section>
+            <mj-column width="570px">
+                <mj-text font-size="10px" line-height="12px">
+                    *For a limited time, buy sale and clearance item, get sale and clearance item of equal or lesser value 50% off. 
+                    Discount applied in cart. All Sales final on Final Clearance items. Some exclusions apply. 
+                    Excludes sale pricing ending in .95 and Propet sale items. Cannot be combined with other discounts or rewards. 
+                    While supplies last. We reserve the right to end or extend this promotion at any time without notice. <br> <br>
+
+                    *Logistics networks nationwide including Fed Ex may experience package delays. 
+                    WalkingCo cannot guarantee delivery by a specific date and we continue to work 
+                    with our partners to deliver in a timely fashion. <br><br>
+
+                    Please add <a href="mailto:rewards@m.thewalkingcompany.com">rewards@m.thewalkingcompany.com</a> to your Address Book or Safe Senders List.
+                </mj-text>
+            </mj-column>
+            <mj-column width="570px">
+                <mj-text font-size="10px" align="center" line-height="12px">
+                    WalkingCo | 1.800.642.9265 | Facebook 
+                </mj-text>
+            </mj-column>
+            <mj-column width="570px">
+                <mj-text font-size="10px" align="left" line-height="12px">
+                    If you would prefer not to receive email updates from WalkingCo simply <a href="https://www.example.com">go here</a> 
+                </mj-text>
+            </mj-column>
+            <mj-column width="570px">
+                <mj-text font-size="10px" align="left" line-height="12px">
+                    WalkingCo <br>
+                    Customer Service Phone 800-642-9265 <br>
+                    519 Lincoln County Parkway <br>
+                    Lincolnton, NC 28092 <br>
+                </mj-text>
+            </mj-column>
+        </mj-section>
+        <!-- End Company Footer -->
+        <!-- Footer -->
+        <!-- End Footer -->
+    </mj-body>
+</mjml>

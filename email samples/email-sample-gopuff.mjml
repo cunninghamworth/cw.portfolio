@@ -1,0 +1,92 @@
+<mjml>
+    <mj-head>
+        <mj-breakpoint width="768px" />
+        <mj-font name="Poppins" href="https://fonts.googleapis.com/css2?family=Poppins" />
+        <mj-attributes>
+            <mj-all padding="0px" />
+            <mj-text font-family="Poppins" align="center" font-size="16px" line-height="24px" color="#000000" padding="16px 0px"/>
+            <mj-image padding="0px"/>
+            <mj-button background-color="#00a4ff" font-size="18px" color="#ffffff" font-family="Poppins" border-radius="30px" padding="16px 8px"/>
+            <mj-section padding="0px"/>
+            <mj-column width="320px" />
+            <mj-body background-color="#ffffff"/>
+
+            <mj-class name="btn-blue" inner-padding="8px 20px" border-radius="30px" align="center" font-size="18px" font-weight="500" line-height="36px" fluid-on-mobile="true"/>
+            <mj-class name="btn-black" background-color="transparent" border="2px solid #ffffff" inner-padding="8px 20px" border-radius="30px" align="center" font-size="18px" font-weight="500" line-height="36px" fluid-on-mobile="true"/>
+            <mj-class name="btn-appstore" background-color="transparent"/>
+        </mj-attributes>
+        <mj-style inline="inline">
+            .anchor-text {
+                color: #1155cc;
+            }
+        </mj-style>
+        <mj-style>
+
+        </mj-style>
+    </mj-head>
+    <mj-body>
+        <!-- Company Header -->
+        <mj-section padding-top="8px" padding-bottom="8px">
+            <mj-column>
+                <mj-image src="/email-images/logo-gopuff-1.png" alt="gopuff logo" width="116px"/>
+            </mj-column>
+        </mj-section>
+        <!-- End Company Header -->
+        <!-- Hero Image -->
+        <mj-section padding-top="8px" padding-bottom="16px">
+            <mj-column>
+                <mj-image src="/email-images/image-gopuff-1.png" alt="pink poppi can and pineapple rind package" />
+            </mj-column>
+        </mj-section>
+        <!-- End Hero Image -->
+        <!-- Main Content -->
+        <mj-section>
+            <mj-column>
+                <mj-text font-size="40px" font-weight="700" padding="26px 0">
+                    All good.
+                </mj-text>
+                <mj-text>
+                    Want to snack on something better for you? We've got you covered. Get healthy treats coming your way in minutes.
+                </mj-text>
+                <mj-button href="https://www.example.com" target="_blank" mj-class="btn-blue" padding="26px 0">
+                    <strong>Order now</strong>
+                </mj-button>
+            </mj-column>
+        </mj-section>
+        <!-- End Main Content -->
+        <!-- Company Footer -->
+        <mj-section background-color="#000000">
+            <mj-column>
+                <mj-button href="https://www.example.com" target="_blank" mj-class="btn-black" padding="26px 0">
+                    <strong>Order on Gopuff</strong>
+                </mj-button>
+            </mj-column>
+        </mj-section>
+        <mj-section background-color="#000000">
+            <mj-group width="320px">
+                <mj-column background-color="#000000" width="50%">
+                    <mj-image src="/email-images/img-appstore-transparent-apple.png" alt="app store" href="https://www.example.com" width="160px" align="right" padding-right="8px"/>
+                </mj-column>
+                <mj-column background-color="#000000" width="50%">
+                    <mj-image src="/email-images/img-appstore-transparent-gplay.png" alt="play store" href="https://www.example.com" width="160px" align="left" padding-left="8px"/>
+                </mj-column>
+                <mj-column width="30%" padding="26px 0 8px 0">
+                    <mj-image src="/email-images/ico-white-fb.png" alt="" href="https://www.example.com" width="32px" align="right"/>
+                </mj-column>
+                <mj-column width="30%" padding="26px 0 8px 0">
+                    <mj-image src="/email-images/ico-white-tw.png" alt="" href="https://www.example.com" width="32px" align="center"/>
+                </mj-column>
+                <mj-column width="30%" padding="26px 0 8px 0">
+                    <mj-image src="/email-images/ico-white-ig.png" alt="" href="https://www.example.com" width="32px" align="left"/>
+                </mj-column>
+                <mj-column width="100%">
+                    <mj-text color="#eceee9" font-size="12px" line-height="18px">
+                        This email was sent by Gopuff. To unsubscribe from our mailing list, click <a class="anchor-text" href="https://www.example.com">here</a>. <br>
+                        goBrands Inc.(Gopuff) · P.O. Box 39721 · Philadelphia, PA 19123 · USA 
+                    </mj-text>
+                </mj-column>
+            </mj-group>
+        </mj-section>
+        <!-- End Company Footer -->
+    </mj-body>
+</mjml>

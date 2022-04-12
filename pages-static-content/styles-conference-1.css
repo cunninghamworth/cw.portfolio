@@ -1,0 +1,218 @@
+
+/* color palette-- #8499B1 #A5C4D4 #05204A #f5f5f5 #E3A0A8 
+    https://coolors.co/8499b1-a5c4d4-05204a-f5f5f5-e3a0a8
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #05204A;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 3em;
+    color: #f5f5f5;
+    font-weight: 100;
+    
+}
+
+h2 {
+    color: #A5C4D4;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header a {
+    color: #f5f5f5;
+}
+
+header p {
+    color: #A5C4D4;
+}
+
+.page-wrapper {
+    height: 100vh;
+}
+
+/* grid is applied to page-wrapper. apply it to each element indidivually to allow its children to become grid items. div everything and use those divs to manipulate the grid positions*/
+
+.container {
+    grid-column: 1 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.page-header, .page-main, .page-footer {
+    display: grid;
+    grid-template-columns: 2;
+}
+
+.page-header {
+    grid-template-rows: repeat(4, auto);
+    grid-column: 3 / span 8;
+    grid-row: 1;
+    padding: 30px 10px 0;
+}
+
+.page-main {
+    grid-column: 1 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.page-footer {
+    grid-column: 3 / span 8;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 40px;
+}
+
+.conference-heading {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    align-self: center;
+    text-transform: uppercase;
+    font-size: 1.25em;
+}
+
+.conference-date-location {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: end;
+    text-align: right;
+    font-size: 1.25em;
+    font-weight: 100;
+    padding-right: 15px;
+}
+
+.nav-top {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: right;
+    align-self: center;
+    padding: 10px;
+}
+
+.nav-top a {
+    padding: 0 5px;
+}
+
+.hero-cta {
+    grid-column: 3 / span  8;
+    display: grid;
+    grid-template-rows: 3;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.hero-content {
+    grid-row: 1;
+    padding: 5px;
+}
+
+.hero-content h2 {
+    padding-bottom: 15px;
+    font-weight: 100;
+    font-size: 2em;
+}
+
+.hero-content p {
+    padding: 15px 50px;
+    font-weight: 100;
+    font-size: 1.5em;
+}
+
+.btn-container {
+    grid-row: 3;
+    padding: 30px;
+    margin: 30px;
+}
+
+
+.hero-cta p {
+    color: #f5f5f5;
+}
+
+.btn-register {
+    background-color: #05204A;
+    border: 1px solid #f5f5f5;
+    border-radius: 8px;
+    color: #f5f5f5;
+    padding: 20px 40px;
+}
+
+.promo-tile-box {
+    grid-column: 1 /  span 12;
+    margin-top: 30px;
+    background-color: #f5f5f5;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    color: #8499B1;
+    padding: 40px;
+}
+
+
+#promo-tile-speakers {
+    grid-column: 3 / span 2;
+}
+
+#promo-tile-schedule {
+    grid-column: 6 / span 2;
+}
+
+#promo-tile-venue {
+    grid-column: 9 / span 2;
+}
+
+.promo-tile h4 {
+    padding-bottom: 15px;
+}
+
+.promo-tile h3 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.promo-tile img {
+    width: 280px;
+    height: 200px;
+    max-width: 280px;
+    object-fit: cover;
+}
+
+.page-copyright {
+    color: #f5f5f5;
+    grid-column: 2 / span 4;
+    align-self: center;
+}
+
+.nav-bottom {
+    color: #f5f5f5;
+    grid-column: 7 / span 6;
+    text-align: right;
+    align-self: center;
+    padding: 10px;
+}
+
+.nav-bottom a {
+    color: #f5f5f5;
+    text-transform: capitalize;
+    padding: 0 10px;
+}

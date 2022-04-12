@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.page-wrapper {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    display: grid;
+    justify-items: center;
+}
+
+.container {
+    background-color: #eeeeee;
+    width: 80%;
+}
+
+.tribute-main {
+    margin: auto;
+    display: grid;
+    justify-items: center;
+    padding: 10px;
+}
+
+h1, 
+h2,
+h3, 
+h4 {
+    text-align: center;
+}
+
+h4 {
+    font-style: italic;
+    padding: 10px;
+    font-size: 1.25em;
+}
+
+.title-card {
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+}
+
+.tribute-name {
+    font-size: 3em;
+}
+
+.tribute-dob {
+    font-size: 1.5em;
+}
+
+.tribute-summary {
+    font-size: 1.5em;
+}
+
+.tribute-bio {
+    width: 60%;
+    border: 1px solid #666666;
+    padding: 10px;
+}
+
+.tribute-img {
+    max-width: 60%;
+    margin: auto;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.tribute-points {
+    padding: 10px 50px 10px 50px;
+}
+
+.tribute-factlist li {
+    list-style-type: square;
+    line-height: 24px;
+}
+
+.tribute-readmore {
+    text-align: center;
+    padding: 20px;
+}
+
+.page-footer {
+    background-color: #222;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: end;
+    padding: 10px 50px 10px 50px;
+}
+
+.page-nav-footer {
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.page-nav-footer li {
+    list-style-type: none;
+    padding: 2px;
+}
+
+.page-nav-footer a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #fff;
+}
+
+.page-copyright{
+    color: #fff;
+}

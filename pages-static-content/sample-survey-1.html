@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META CHARSET -->
+    <meta charset="UTF-8">
+    <!-- META EDGE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- META VIEWPORT -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TITLE -->
+    <title>Survey Page Type 1</title>
+    <!-- META DESCRIPTION -->
+    <meta name="description" content="">
+    <!-- META KEYWORDS -->
+    <meta name="keywords" content="">
+    <!-- META AUTHOR -->
+    <meta name="author" content="">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="styles-survey-1.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="container">
+            <header class="page-header">
+
+            </header>
+            <main class="page-main">
+                <section class="survey-header">
+                    <h1>Customer Survey</h1>
+                    <h2>Please fill out the survey below:</h2>
+                </section>
+                <section class="survey-form">
+                    <form action="#">
+                        <fieldset>
+                            <h3>Personal Infornamtion</h3>
+                            <div class="survey-data" id="survey-personal-data">
+                                <div>
+                                    <input type="text" id="form-fname" name="user-fname"
+                                        placeholder="First name*" required>
+                                </div>
+                                <div>
+                                    <input type="text" id="form-lname" name="user-lname"
+                                        placeholder="Last name*" required>
+                                </div>
+                                <div>
+                                    <input type="text" id="form-order-num" name="user-order-num"
+                                        placeholder= "Order number (optional)">
+                                </div>
+                                <div>
+                                    <input type="text" id="form-email" name="user-email"
+                                        placeholder= "Email address*" required>
+                                </div>
+                                <div>
+                                    <input type="text" id="form-phone" name="user-phone"
+                                        placeholder= "Phone number (optional)">
+                                </div>
+                                <div>
+                                    <label for="user-sex-gender">Please choose which applies:</label>
+                                </div>
+                                <div>
+                                    <select id="form-sex-gender" name="user-sex-gender" required>
+                                        <option disabled selected value></option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="neither">Neither</option>
+                                        <option value="other">Other</option>
+                                        <option value="no-disclose">Prefer not to say</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <hr>
+                            <h3>Experience Review</h3>
+                            <div class="survey-data" id="survey-review-data">
+                                <h4 class="survey-likert-heading">How would you rate our service?</h4>
+                                <div>
+                                    <div class="likert-container">
+                                        <ul class="likert">
+                                            <li>
+                                                <input type="radio" name="likert-radio" value="1">
+                                                <label>Terrible</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="likert-radio" value="2">
+                                                <label>Poor</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="likert-radio" value="3">
+                                                <label>Neutral</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="likert-radio" value="4">
+                                                <label>Good</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="likert-radio" value="5">
+                                                <label>Excellent</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-container">
+                                        <select name="likert-dropdown" required>
+                                            <option disabled selected value>--please choose one--</option>
+                                            <option value="1">Terrible</option>
+                                            <option value="2">Poor</option>
+                                            <option value="3">Neutral</option>
+                                            <option value="4">Good</option>
+                                            <option value="5">Excellent</option>
+                                        </select>    
+                                    </div>
+                                </div>
+                                <h4 class="survey-likert-heading">How would you rate our product(s)?</h4>
+                                <div>
+                                    <div class="likert-container">
+                                        <ul class="likert">
+                                            <li>
+                                                <input type="radio" name="likert-radio" value="1">
+                                                <label>Terrible</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="likert-radio" value="2">
+                                                <label>Poor</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="likert-radio" value="3">
+                                                <label>Neutral</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="likert-radio" value="4">
+                                                <label>Good</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="likert-radio" value="5">
+                                                <label>Excellent</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-container">
+                                        <select name="likert-dropdown" required>
+                                            <option disabled selected value>--please choose one--</option>
+                                            <option value="1">Terrible</option>
+                                            <option value="2">Poor</option>
+                                            <option value="3">Neutral</option>
+                                            <option value="4">Good</option>
+                                            <option value="5">Excellent</option>
+                                        </select>    
+                                    </div>
+                                </div>
+                                <h4 class="survey-likert-heading">Overall, how would you rate your experience with us?</h4>
+                                <div>
+                                    <div class="likert-container">
+                                        <ul class="likert">
+                                            <li>
+                                                <input type="radio" name="likert-radio" value="1">
+                                                <label>Terrible</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="likert-radio" value="2">
+                                                <label>Poor</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="likert-radio" value="3">
+                                                <label>Neutral</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="likert-radio" value="4">
+                                                <label>Good</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="likert-radio" value="5">
+                                                <label>Excellent</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-container">
+                                        <select name="likert-dropdown" required>
+                                            <option disabled selected value>--please choose one--</option>
+                                            <option value="1">Terrible</option>
+                                            <option value="2">Poor</option>
+                                            <option value="3">Neutral</option>
+                                            <option value="4">Good</option>
+                                            <option value="5">Excellent</option>
+                                        </select>    
+                                    </div>
+                                </div>
+                                <h4 class="survey-likert-heading">How likely are you to recommend us or our product(s) to others?</h4>
+                                <div>
+                                    <div class="likert-container">
+                                        <ul class="likert">
+                                            <li>
+                                                <input type="radio" name="likert-radio" value="1">
+                                                <label>Very Unlikely</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="likert-radio" value="2">
+                                                <label>Unlikely</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="likert-radio" value="3">
+                                                <label>Unsure</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="likert-radio" value="4">
+                                                <label>Likely</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" name="likert-radio" value="5">
+                                                <label>Very Likely</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown-container">
+                                        <select name="likert-dropdown" required>
+                                            <option disabled selected value>--please choose one--</option>
+                                            <option value="1">Very Unlikely</option>
+                                            <option value="2">Unlikely</option>
+                                            <option value="3">Unsure</option>
+                                            <option value="4">Likely</option>
+                                            <option value="5">Very Likely</option>
+                                        </select>    
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <h3>Additional Comments</h3>
+                            <div class="survey-data" id="survey-comment-box">
+                                <p>Have anything else to say? Let us know below!</p>
+                                <textarea name="form-commentbox" id="form-comments" cols="30" rows="10"></textarea>
+                            </div>
+                        </fieldset>
+                        <section class="survey-submit">
+                            <div class="survey-promo-box">
+                                <input type="checkbox" name="survey-check-promo" id="checkbox-promo" checked>
+                                <label for="survey-check-promo">Send me updates and promotions for events, services, and products.</label>
+                            </div>
+                            <div class="buttons">
+                                <button class="btn-submit">Submit</button>
+                            </div>
+                        </section>
+                    </form>
+                </section>
+            </main>
+        </div>
+    </div>
+    <script src=""></script>
+</body>
+
+</html>

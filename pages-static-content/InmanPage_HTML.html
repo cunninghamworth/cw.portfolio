@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link href="InmanPage_CSS.css" rel="stylesheet" />
+    <title>IRE Landing Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            const FORM_TIME_START = Math.floor((new Date).getTime() / 1000);
+            let formElement = document.getElementById("tfa_0");
+            if (null === formElement) {
+                formElement = document.getElementById("0");
+            }
+            let appendJsTimerElement = function () {
+                let formTimeDiff = Math.floor((new Date).getTime() / 1000) - FORM_TIME_START;
+                let cumulatedTimeElement = document.getElementById("tfa_dbCumulatedTime");
+                if (null !== cumulatedTimeElement) {
+                    let cumulatedTime = parseInt(cumulatedTimeElement.value);
+                    if (null !== cumulatedTime && cumulatedTime > 0) {
+                        formTimeDiff += cumulatedTime;
+                    }
+                }
+                let jsTimeInput = document.createElement("input");
+                jsTimeInput.setAttribute("type", "hidden");
+                jsTimeInput.setAttribute("value", formTimeDiff.toString());
+                jsTimeInput.setAttribute("name", "tfa_dbElapsedJsTime");
+                jsTimeInput.setAttribute("id", "tfa_dbElapsedJsTime");
+                jsTimeInput.setAttribute("autocomplete", "off");
+                if (null !== formElement) {
+                    formElement.appendChild(jsTimeInput);
+                }
+            };
+            if (null !== formElement) {
+                if (formElement.addEventListener) {
+                    formElement.addEventListener('submit', appendJsTimerElement, false);
+                } else if (formElement.attachEvent) {
+                    formElement.attachEvent('onsubmit', appendJsTimerElement);
+                }
+            }
+        });
+    </script>
+
+    <!-- <link href="https://www.tfaforms.com/dist/form-builder/5.0.0/wforms-layout.css?v=1634744591" rel="stylesheet"
+        type="text/css" />
+
+    <link href="https://www.tfaforms.com/uploads/themes/theme-68007.css" rel="stylesheet" type="text/css" />
+    <link href="https://www.tfaforms.com/dist/form-builder/5.0.0/wforms-jsonly.css?v=1634744591"
+        rel="alternate stylesheet" title="This stylesheet activated by javascript" type="text/css" /> -->
+    <script type="text/javascript" src="https://www.tfaforms.com/wForms/3.11/js/wforms.js?v=1634744591"></script>
+    <script type="text/javascript">
+        wFORMS.behaviors.prefill.skip = false;
+    </script>
+    <script type="text/javascript"
+        src="https://www.tfaforms.com/wForms/3.11/js/localization-en_US.js?v=1634744591"></script>
+</head>
+
+<body>
+    <div class="pageLayout">
+        <div class="topGradientArea">
+            <div class="logoBoxTop">
+                <img src="https://marketing.firstam.com/XMPieAssets/Images/Web/Inman2021/FirstAmericanTitle_Logo.png" alt="">
+            </div>
+            <div class="greetingBox">
+                <p class="greetingHeader">Thanks for stopping by!</p>
+                <p class="greetingParagraph">Access our premier suite of tools for real estate agents in the all-new <span class="firstAmTitle">FirstAm<em><strong> Ignite</strong></em>RE&trade;.</span> 
+                </p>
+            </div>
+            <div class="dotsBoxTop">
+                <img class="dotsLeft" src="https://marketing.firstam.com/XMPieAssets/Images/Web/Inman2021/Dot_left.png" alt="dots left">
+
+                <img class="dotsRight" src="https://marketing.firstam.com/XMPieAssets/Images/Web/Inman2021/Dot_right.png" alt="dots right">
+            </div>
+            <div class="videoEmbedBox" itemscope itemtype="https://schema.org/VideoObject">
+                <meta itemprop="uploadDate" content="Tue Oct 12 2021 10:51:00 GMT-0700 (Pacific Daylight Time)" />
+                <meta itemprop="name" content="Introducing FirstAm IgniteRE" />
+                <meta itemprop="duration" content="P0Y0M0DT0H0M44S" />
+                <meta itemprop="thumbnailUrl" content="https://content.jwplatform.com/thumbs/4paemYLS-1920.jpg" />
+                <meta itemprop="contentUrl" content="https://content.jwplatform.com/videos/4paemYLS-BUiUi2TM.mp4" />
+                <iframe
+                    src="https://cdn.jwplayer.com/players/4paemYLS-F1hdHJCb.html" width="100%" height="100%"
+                    frameborder="0" scrolling="auto" title="Introducing FirstAm IgniteRE" allowfullscreen>
+                </iframe>
+            </div>
+
+        </div>
+        <div class="middleSection">
+            <div class="signupCTABox">
+                <p class="signupCTAHeader">Sign up for early access</p>
+                <p class="signupCTAParagraph">Fill out the form below and we'll be in touch soon.</p>
+            </div>
+            <div class="wFormContainer">
+                <div class="wForm" id="0-WRPR" dir="ltr">
+                    <h3 class="wFormTitle" data-testid="form-title" id="0-T">Get started!</h3>
+                    <form method="post" action="https://www.tfaforms.com/api_v2/workflow/processor"
+                        class="hintsBelow labelsAbove" id="0" role="form">
+                        <div class="oneField field-container-D    " id="tfa_1-D">
+                            <br>
+                            <div class="inputWrapper"><input aria-required="true" aria-hidden="true" type="text"
+                                    id="tfa_1" name="tfa_1" placeholder="First Name *" title="First Name"
+                                    class="required"></div>
+                        </div>
+                        <div class="oneField field-container-D    " id="tfa_2-D">
+                            <br>
+                            <div class="inputWrapper"><input aria-required="true" aria-hidden="true" type="text"
+                                    id="tfa_2" name="tfa_2" placeholder="Last Name *" title="Last Name"
+                                    class="required"></div>
+                        </div>
+                        <div class="oneField field-container-D    " id="tfa_3-D">
+                            <br>
+                            <div class="inputWrapper"><input aria-required="true" aria-hidden="true" type="text"
+                                    id="tfa_3" name="tfa_3" placeholder="Email *" title="Email"
+                                    class="validate-email required"></div>
+                        </div>
+                        <div class="oneField field-container-D    " id="tfa_4-D">
+                            <br>
+                            <div class="inputWrapper"><input aria-required="true" aria-hidden="true" type="text"
+                                    id="tfa_4" name="tfa_4" placeholder="Phone *" title="Phone Number" class="required">
+                            </div>
+                        </div>
+                        <div class="oneField field-container-D    " id="tfa_5-D">
+                            <br>
+                            <div class="inputWrapper"><select aria-required="true" aria-hidden="true" id="tfa_5"
+                                    name="tfa_5" title="State" class="required">
+                                    <option value="">Please select... *</option>
+                                    <option value="tfa_6" id="tfa_6" class="">AK</option>
+                                    <option value="tfa_7" id="tfa_7" class="">AL</option>
+                                    <option value="tfa_8" id="tfa_8" class="">AR</option>
+                                    <option value="tfa_9" id="tfa_9" class="">AZ</option>
+                                    <option value="tfa_10" id="tfa_10" class="">CA</option>
+                                    <option value="tfa_11" id="tfa_11" class="">CO</option>
+                                    <option value="tfa_12" id="tfa_12" class="">CT</option>
+                                    <option value="tfa_13" id="tfa_13" class="">DC</option>
+                                    <option value="tfa_14" id="tfa_14" class="">DE</option>
+                                    <option value="tfa_15" id="tfa_15" class="">FL</option>
+                                    <option value="tfa_16" id="tfa_16" class="">GA</option>
+                                    <option value="tfa_17" id="tfa_17" class="">HI</option>
+                                    <option value="tfa_18" id="tfa_18" class="">IA</option>
+                                    <option value="tfa_19" id="tfa_19" class="">ID</option>
+                                    <option value="tfa_20" id="tfa_20" class="">IL</option>
+                                    <option value="tfa_21" id="tfa_21" class="">IN</option>
+                                    <option value="tfa_22" id="tfa_22" class="">KS</option>
+                                    <option value="tfa_23" id="tfa_23" class="">KY</option>
+                                    <option value="tfa_24" id="tfa_24" class="">LA</option>
+                                    <option value="tfa_25" id="tfa_25" class="">MA</option>
+                                    <option value="tfa_26" id="tfa_26" class="">MD</option>
+                                    <option value="tfa_27" id="tfa_27" class="">ME</option>
+                                    <option value="tfa_28" id="tfa_28" class="">MI</option>
+                                    <option value="tfa_29" id="tfa_29" class="">MN</option>
+                                    <option value="tfa_30" id="tfa_30" class="">MS</option>
+                                    <option value="tfa_31" id="tfa_31" class="">MO</option>
+                                    <option value="tfa_32" id="tfa_32" class="">MT</option>
+                                    <option value="tfa_33" id="tfa_33" class="">NC</option>
+                                    <option value="tfa_34" id="tfa_34" class="">NE</option>
+                                    <option value="tfa_35" id="tfa_35" class="">NH</option>
+                                    <option value="tfa_36" id="tfa_36" class="">NJ</option>
+                                    <option value="tfa_37" id="tfa_37" class="">NM</option>
+                                    <option value="tfa_38" id="tfa_38" class="">NV</option>
+                                    <option value="tfa_39" id="tfa_39" class="">NY</option>
+                                    <option value="tfa_40" id="tfa_40" class="">ND</option>
+                                    <option value="tfa_41" id="tfa_41" class="">OH</option>
+                                    <option value="tfa_42" id="tfa_42" class="">OK</option>
+                                    <option value="tfa_43" id="tfa_43" class="">OR</option>
+                                    <option value="tfa_44" id="tfa_44" class="">PA</option>
+                                    <option value="tfa_45" id="tfa_45" class="">RI</option>
+                                    <option value="tfa_46" id="tfa_46" class="">SC</option>
+                                    <option value="tfa_47" id="tfa_47" class="">SD</option>
+                                    <option value="tfa_48" id="tfa_48" class="">TN</option>
+                                    <option value="tfa_49" id="tfa_49" class="">TX</option>
+                                    <option value="tfa_50" id="tfa_50" class="">UT</option>
+                                    <option value="tfa_51" id="tfa_51" class="">VT</option>
+                                    <option value="tfa_52" id="tfa_52" class="">VA</option>
+                                    <option value="tfa_53" id="tfa_53" class="">WA</option>
+                                    <option value="tfa_54" id="tfa_54" class="">WV</option>
+                                    <option value="tfa_55" id="tfa_55" class="">WI</option>
+                                    <option value="tfa_56" id="tfa_56" class="">WY</option>
+                                </select></div>
+                        </div>
+                        <div class="actions" id="0-A">
+                            <input type="submit" data-label="Submit" class="primaryAction" id="submit_button"
+                                value="Submit">
+                        </div>
+                        <div style="clear:both"></div>
+                        <input type="hidden" value="4940742" name="tfa_dbFormId" id="tfa_dbFormId"><input type="hidden"
+                            value="" name="tfa_dbResponseId" id="tfa_dbResponseId"><input type="hidden"
+                            value="2e96ab566f1c9340762f2c636d77d9bf" name="tfa_dbControl" id="tfa_dbControl"><input
+                            type="hidden" value="" name="tfa_dbWorkflowSessionUuid"
+                            id="tfa_dbWorkflowSessionUuid"><input type="hidden" value="1" name="tfa_dbVersionId"
+                            id="tfa_dbVersionId"><input type="hidden" value="" name="tfa_switchedoff"
+                            id="tfa_switchedoff">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="blueGreyBox"></div>
+        <div class="tealBox"></div>
+        <div class="yellowLineBreak"></div>
+        <div class="testimonialSection">
+            <div class="testimonialCallout">
+                <p>What our early users are saying about <span class="firstAmTitle" style="color: #1E55FF;">FirstAm
+                        <em><strong>Ignite</strong></em>RE&trade;</span></p>
+            </div>
+            <div class="testimonialImage">
+                <img class="carouselMainImage" src="https://marketing.firstam.com/XMPieAssets/Images/Web/Inman2021/Image.png" alt="image.png">
+                <div class="carouselSection">
+                    <div class="carouselContainer" id="testimonialOne">
+                        <p class="testimonialName">Annette</p>
+                        <br>
+                        <p class="testimonialText">“<span class="firstAmTitle">FirstAm<em><strong> Ignite</strong></em>RE&trade;</span> puts everything at First American in one spot
+                            ... it's nice to have one login for
+                            that.”</p>
+                    </div>
+                    <div class="carouselContainer" id="testimonialTwo">
+                        <p class="testimonialName" >Kelly</p>
+                        <br>
+                        <p class="testimonialText">“The idea of not having to go into that other website or another
+                            location will make everyone's life so much easier. [...] This is a great feature, a great
+                            solution to have.”</p>
+                    </div>
+                    <div class="carouselContainer" id="testimonialThree">
+                        <p class="testimonialName">Denise</p>
+                        <br>
+                        <p class="testimonialText">“Going to one spot. That is huge. Going to one spot and getting
+                            everything I need and not having to open up another tab.”</p>
+                    </div>
+                </div>
+                <div class="dotsBoxBottom">
+                    <img class="dotsBottom" src="https://marketing.firstam.com/XMPieAssets/Images/Web/Inman2021/bottom_dots.png" alt="dots bottom">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="footerBoilerplate">
+        <div class="logoBoxBottom">
+            <img src="https://marketing.firstam.com/XMPieAssets/Images/Web/Inman2021/FATCO_Logo.png" alt="">
+        </div>
+        <div class="legalLinks">
+            <ul>
+                <li><a href="" class="legalLinkOut">Privacy Policy</a></li>
+                <li><a href="" class="legalLinkOut">Terms of Use</a></li>
+                <li><a href="" class="legalLinkOut">End User License Agreement</a></li>
+            </ul>
+        </div>
+        <br>
+        <div class="techSupportContact">
+            <p>Technical Support</p>
+            <a href="mailto:FA-TechSupport@firstam.com"><strong>FA-TechSupport@firstam.com</strong></a>
+            <br>
+            <a href="tel:866-540-5614">(866) 540-5614</a>
+        </div>
+        <br>
+        <div class="copyrightInfo">
+            <p><span>&copy</span>First American Financial Corporate and/or its affiliates. All rights reserved.</p>
+            <br>
+            <p>First American Title Insurance Company makes no express or implied warranty respecting the information
+                presented and assumes no responsibility for errors or omissions.
+                First American, the eagle logo, and First American Title are registered trademarks of First American
+                Financial Corporate and/or its affiliates. </p>
+        </div>
+    </div>  
+</footer>
+
+</html>

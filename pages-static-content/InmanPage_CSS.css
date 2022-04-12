@@ -1,0 +1,599 @@
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  margin: auto;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  background: #fff;
+}
+
+body {
+  margin: auto;
+  width: auto;
+  height: 100%;
+  background: #F7F9FB;
+}
+
+div {
+  overflow: hidden;
+}
+
+.firstAmTitle {
+  white-space: nowrap;
+}
+
+.topGradientArea {
+  background: linear-gradient(90deg, #1E55FF, #7BD5F5);
+  position: absolute;
+  margin: auto;
+  left: 0px;
+  width: 100%;
+  height: 580px;
+  top: 0px;
+}
+
+.logoBoxTop {
+  position: relative;
+  width: 360px;
+  height: 100px;
+  top: 50px;
+  left: -440px;
+  padding: 10px;
+}
+
+.greetingBox {
+  position: relative;
+  left: -400px;
+  top: 100px;
+  height: 250px;
+  width: 410px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.greetingHeader {
+  position: relative;
+  height: 125px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 58px;
+  line-height: 60px;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+
+.greetingParagraph {
+  position: relative;
+  height: 125px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+.videoEmbedBox {
+  position: relative;
+  background-color: #ddd;
+  width: 690px;
+  height: 390px;
+  left: 270px;
+  top: -450px;
+  z-index: 3;
+  margin-bottom: 10px;
+  
+}
+
+#promovideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding-top: 56.25%;
+}
+
+.dotsBoxTop {
+  position: relative;
+  width: 830px;
+  height: 230px;
+  left: 270px;
+  top: -150px;
+}
+
+.dotsLeft {
+  position: absolute;
+  width: 154.4px;
+  height: 230px;
+}
+
+.dotsRight {
+  position: absolute;
+  left: 784px;
+  width: 44.2px;
+  height: 230px;
+}
+
+.middleSection {
+  position: relative;
+  display: block;
+  top: 580px;
+  height: 1100px;
+  background-color: #F7F9FB;
+  background-size: cover;
+  width: auto;
+}
+
+.middleSection:after {
+  content: "";
+  width: 200%;
+  height: 0;
+  padding-top: 200%;
+  border-radius: 100%;
+  background: #fff;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.signupCTABox {
+  position: relative;
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  padding: 30px;
+  left: auto;
+  width: 913px;
+  height: 200px;
+  text-align: center;
+  color: #323840;
+  z-index: 2;
+}
+
+.signupCTAHeader {
+  width: 913px;
+  height: 100px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.signupCTAParagraph {
+  width: 913px;
+  height: 100px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.tealBox {
+  position: relative;
+  width: 530px;
+  height: 364px;
+  left: -180px;
+  top: -280px;
+  background: #79D2F6;
+  border-radius: 8px;
+}
+
+.blueGreyBox {
+  position: relative;
+  width: 303px;
+  height: 208px;
+  left: 320px;
+  top: -150px;
+  background: #E6F1FF;
+  border-radius: 8px; 
+}
+
+.wFormContainer {
+  position: relative;
+  display: block;
+  max-width: 100vw;
+  padding: 30px;
+  background: #1E55FF;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  text-align: center;
+  z-index: 2;
+}
+
+.wFormTitle {
+  max-width: 100vw;
+  height: 46px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.primaryAction {
+  background-color: #fff;
+  color: #0073e6;
+  margin-top: 1.6em;
+  padding: 1px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 2px;
+  text-align: center;
+}
+
+input[type=text], select {
+  width: 583.53px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  box-sizing: border-box;
+  height: 55px;
+}
+
+input[type=submit] {
+  width: 140px;
+  height: 55px;
+  background-color: #fff;
+  color: #043B7C;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #eee;
+}
+
+.testimonialSection {
+  width: auto;
+  position: relative;
+  background-color: #F7F9FB;
+}
+
+.testimonialCallout {
+  position: relative;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  color: #323840;
+  width: 700px;
+  padding: 30px;
+}
+
+.yellowLineBreak {
+  border: 1px solid #FFD963;
+  background-color: #FFD963; 
+  height: 12px;
+  width: 15%;
+}
+
+.testimonialImage {
+  position: relative;
+  border-radius: 12px;
+  width: 959px;
+  height: 640px;
+  float: left;
+  overflow: visible;
+}
+
+.carouselSection {
+  display: flex;
+  position: relative;
+  top: -400px;
+  left: 400px;
+  z-index: 2;
+  overflow: visible;
+  width: 1000px;  
+}
+
+.carouselMainImage {
+  position: relative;
+  float: left;
+}
+
+.carouselContainer {
+  position: relative;
+  padding: 30px;
+  width: 300px;
+  height: 260px;
+  left: 40px;
+  top: 30px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+}
+
+.testimonialName {
+  font-size: 30px;
+  font-weight: 500;
+  color: #1E61AC;
+}
+
+.testimonialText {
+  font-size: 18px;
+}
+
+.dotsBoxBottom {
+  position: relative;
+  width: 230px;
+  height: 50px;
+  left: 450px;
+  top: -320px;
+}
+
+.dotsBottom {
+  position: absolute;
+  width: 230px;
+  height: 50px;
+  transform: rotateX(90);
+  z-index: 2;
+}
+
+
+footer {
+  background-color: #eee;
+  padding: 30px;
+  width: auto;
+  margin-top: 20px;
+}
+
+.footerBoilerplate {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.logoBoxBottom {
+  position: relative;
+  float: left;
+  clear: left;
+  padding: 10px;
+  width: 360px;
+  height: 100px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.legalLinks {
+  width: 25%;
+  position: relative;
+  float: left;
+  clear: left;
+}
+
+.legalLinkOut {
+  color: #043B7C;
+  font-weight: 700;
+}
+
+.techSupportContact {
+  font-size: 10px;
+  float: left;
+  clear: left;
+  margin-top: 10px
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  font-size: 12px;
+  color: #000;
+  padding: 8px;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.copyrightInfo {
+  font-size: 10px;
+  float: left;
+  clear: left;
+  margin-top: 10px;
+}
+
+/* for small mobile phones */
+
+
+@media only screen and (min-width:340px) and (max-width:599px) {
+  html {width: 100%; height: 100%; }
+  body {width: 100%; height: 100%; margin: 0px;}
+  div {display: flex; flex-direction: column; align-items: center; flex: content;}
+  .topGradientArea {width: 100%; height: auto; margin-bottom: 40px;}
+  .dotsBoxTop {display: none;}
+  .dotsLeft {display: none;}
+  .dotsRight {display: none;}
+  .dotsBoxBottom {display: none;}
+  .dotsBottom {display: none;}
+  .logoBoxTop {width: 100%; flex: content; left: 1vw; max-width: 300px; top: 80px;}
+  .greetingBox {width: 100%; height: auto; left: 1px; flex: content; min-height: 100px;}
+  .greetingHeader {width: 60%; height: auto; left: 1px; flex: content; min-height: 100px; margin-bottom: 1px; font-size: 2em; text-align: center; line-height: 36px;}
+  .greetingParagraph {width: 60%; height: auto; left: 1px; flex: content; min-height: 100px; margin-top: 1px; margin-bottom: 10px; font-size: 1em; text-align: center; line-height: 24px;}
+  .videoEmbedBox {width: 95%; height: 100px; top: 180px; position: relative; left: auto; min-height: 350px;}
+  .signupCTABox {width: 100%; flex: 1; top: auto; margin-top: -30px; position: relative;}
+  .signupCTAHeader {width: 100%; flex: 1; top: auto; position: relative; margin-bottom: 10px; font-size: 2em;}
+  .signupCTAParagraph {width: 100%; flex: 1; top: auto; position: relative; margin-top: 10px;}
+  .middleSection {width: 100%; top: 680px; position: relative; flex: content; background-size: contain;}
+  .middleSection:after {width: 100%; top: 680px; display: none;}
+  .wFormContainer {width: 90%; flex: 1; align-items: center; position: relative; margin-top: 40px;}
+  .wFormTitle {width: 100%; flex: 1;}
+  input[type=text], select {width: 240px;}
+  .primaryAction {width: 200px;}
+  input[type=submit] {width: auto; position: relative; left: auto; flex: 1;}
+  .yellowLineBreak {width: 50%; top: 750px; position: relative; z-index: 1; border: 3px solid #FFD963; margin-top: -30px; margin-bottom: -20px;}
+  .firstAmTitle {white-space: nowrap;}
+  .testimonialSection {width: 100%; position: relative; top: 800px; float: left;}
+  .testimonialCallout {width: 100%; top: 0px; position: relative; left: auto; font-size: 1em; margin-bottom: -80px; margin-top: -10px; line-height: 24px;}
+  .testimonialImage {width: 100%; height: 50px; top: 10px; position: relative; float: left;}
+  .carouselMainImage {width: 70%; top: 60px; position: relative; float: left;}
+  .carouselSection {width: auto;  top: -100px; left: 0px; position: relative; margin-bottom: 800px; float: left;}
+  .carouselContainer {width: 200px; height: 200px; top: 80px; position: relative; z-index: 2; max-height: 200px;}
+  .testimonialName {width: auto; left: auto; font-size: 1em;}
+  .testimonialText {width: auto; left: auto; font-size: 0.75em;}
+  footer {width: 100%; position: relative; margin-top: 0px;}
+  .logoBoxBottom {width: auto; flex: content; left: 2vw; top: 10px; margin-bottom: -10px;}
+  .legalLinks {margin-top: 10px; width: 100%; left: 15%;}
+  .techSupportContact {width: 100%;}
+  #testimonialTwo, #testimonialThree {display: none;}
+}
+
+
+/* for mobile phones */
+
+@media only screen and (min-width:600px) and (max-width:767px) {
+  html {width: 100%; height: 100%;}
+  body {width: 100%; height: 100%; margin: 0px;}
+  div {display: flex; flex-direction: column; align-items: center; flex: content;}
+  .topGradientArea {width: 100%; height: auto; margin-bottom: 40px;}
+  .dotsBoxTop {display: none;}
+  .dotsLeft {display: none;}
+  .dotsRight {display: none;}
+  .dotsBoxBottom {display: none;}
+  .dotsBottom {display: none;}
+  .logoBoxTop {width: 100%; flex: content; left: 1vw; max-width: 600px;}
+  .greetingBox {width: 100%; height: auto; left: 1px; flex: content; min-height: 100px;}
+  .greetingHeader {width: 60%; height: auto; flex: content; min-height: 100px; margin-bottom: 20px; font-size: 3em; line-height: 48px; text-align: center;}
+  .greetingParagraph {width: 80%; height: auto; flex: content; min-height: 100px; margin-top: 10px; margin-bottom: 5px; font-size: 1.75em; line-height: 32px; text-align: center;}
+  .videoEmbedBox {width: 95%; height: 100px; top: 220px; position: relative; left: auto; min-height: 480px;}
+  .signupCTABox {width: 100%; flex: 1; top: auto; margin-top: 140px; position: relative; height: 230px;}
+  .signupCTAHeader {width: 100%; flex: 1; top: auto; position: relative; margin-bottom: 24px; font-size: 3em;}
+  .signupCTAParagraph {width: 70%; flex: 1; top: auto; position: relative; margin-top: 14px;}
+  .middleSection {width: 100%; top: 680px; position: relative; flex: content; background-size: contain;}
+  .middleSection:after {width: 100%; top: 680px;}
+  .wFormContainer {width: 90%; flex: 1; align-items: center; position: relative;}
+  .wFormTitle {width: 100%; flex: 1;}
+  input[type=text], select {width: 440px; font-size: 1em;}
+  .primaryAction {width: 200px;}
+  input[type=submit] {width: auto; position: relative; left: auto; flex: 1; margin-top: 30px;}
+  .yellowLineBreak {width: 50%; top: 750px; position: relative; z-index: 1; border: 3px solid #FFD963; margin-top: -30px; margin-bottom: -20px;}
+  .firstAmTitle {white-space: nowrap;}
+  .testimonialSection {width: 100%; position: relative; top: 800px; float: left;}
+  .testimonialCallout {width: 100%; top: 0px; position: relative; left: auto; font-size: 2em; margin-bottom: -80px; margin-top: -30px; line-height: 38px;}
+  .testimonialImage {width: 100%; height: 50px; top: 10px; position: relative; float: left;}
+  .carouselMainImage {width: 70%; top: 60px; position: relative; float: left;}
+  .carouselSection {width: auto;  top: -100px; left: 0px; position: relative; margin-bottom: 800px; float: left;}
+  .carouselContainer {width: 250px; height: auto; top: 80px; position: relative; z-index: 2; margin-bottom: 20px;}
+  .testimonialName {width: auto; left: auto; font-size: 1.25em;}
+  .testimonialText {width: auto; left: auto; font-size: 1em;}
+  footer {width: 100%; position: relative; margin-top: 0px;}
+  .logoBoxBottom {width: auto; flex: content; left: 2vw; top: 10px; margin-bottom: -10px;}
+  .legalLinks {margin-top: 50px; width: 100%; left: -1%;}
+  .techSupportContact {width: 100%;}
+  #testimonialTwo, #testimonialThree {display: none;}
+}
+
+/* for tablets */
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+  html {width: 100%; height: 100%;}
+  body {width: 100%; height: 100%; margin: 0px;}
+  div {display: flex; flex-direction: column; align-items: center; flex: content;}
+  .topGradientArea {width: 100%; height: auto; margin-bottom: 40px;}
+  .dotsBoxTop {display: none;}
+  .dotsLeft {display: none;}
+  .dotsRight {display: none;}
+  .dotsBoxBottom {display: none;}
+  .dotsBottom {display: none;}
+  .logoBoxTop {width: 100%; flex: content; left: 1vw; max-width: 600px;}
+  .greetingBox {width: 100%; height: auto; left: 1px; flex: content; min-height: 100px;}
+  .greetingHeader {width: 100%; height: auto; flex: content; min-height: 100px; margin-bottom: 10px; font-size: 3em; line-height: 60px; text-align: center;}
+  .greetingParagraph {width: 50%; height: auto; flex: content; min-height: 100px; margin-top: 10px; margin-bottom: 10px; font-size: 1.5em; line-height: 32px; text-align: center;}
+  .videoEmbedBox {width: 95%; height: 100px; top: 180px; position: relative; left: auto; min-height: 532px; aspect-ratio: 16/9;}
+  .signupCTABox {width: 100%; flex: 1; top: auto; margin-top: 200px; position: relative; height: 180px;}
+  .signupCTAHeader {width: 100%; flex: 1; top: auto; position: relative; margin-bottom: 1px; font-size: 3em;}
+  .signupCTAParagraph {width: 100%; flex: 1; top: auto; position: relative; margin-top: 1px;}
+  .middleSection {width: 100%; top: 680px; position: relative; flex: content; background-size: contain;}
+  .middleSection:after {width: 100%; top: 680px;}
+  .wFormContainer {width: 90%; flex: 1; align-items: center; position: relative;}
+  .wFormTitle {width: 100%; flex: 1;}
+  input[type=text], select {width: 600px;}
+  .primaryAction {width: 200px;}
+  input[type=submit] {width: auto; position: relative; left: auto; flex: 1; margin-top: 30px;}
+  .yellowLineBreak {width: 50%; top: 750px; position: relative; z-index: 1; border: 3px solid #FFD963; margin-top: -30px; margin-bottom: -20px;}
+  .firstAmTitle {white-space: nowrap;}
+  .testimonialSection {width: 100%; position: relative; top: 800px; float: left;}
+  .testimonialCallout {width: 100%; top: 0px; position: relative; left: auto; font-size: 2em; margin-bottom: -80px; margin-top: -30px; line-height: 38px;}
+  .testimonialImage {width: 100%; height: 50px; top: 10px; position: relative; float: left;}
+  .carouselMainImage {width: 70%; top: 60px; position: relative; float: left;}
+  .carouselSection {width: auto;  top: -100px; left: 0px; position: relative; margin-bottom: 800px; float: left;}
+  .carouselContainer {width: 300px; height: 300px; top: 80px; position: relative; z-index: 2; margin-bottom: 20px; min-height: 300px;}
+  .testimonialName {width: auto; left: auto; font-size: 2em;}
+  .testimonialText {width: auto; left: auto; font-size: 1.25em;}
+  footer {width: 100%; position: relative; margin-top: 0px;}
+  .logoBoxBottom {width: auto; flex: content; left: 2vw; top: 10px; margin-bottom: -10px;}
+  .legalLinks {margin-top: 50px; width: 100%; left: 5%;}
+  .techSupportContact {width: 100%; float: left;}
+  #testimonialTwo, #testimonialThree {display: none;}
+}
+
+@media only screen and (min-width:1024px) and (max-width:1439px) {
+  html {width: 100%; height: 100%;}
+  body {width: 100%; height: 100%; margin: 0px;}
+  div {display: flex; flex-direction: column; align-items: center; flex: content;}
+  .topGradientArea {width: 100%; height: auto; margin-bottom: 40px;}
+  .dotsBoxTop {display: none;}
+  .dotsLeft {display: none;}
+  .dotsRight {display: none;}
+  .dotsBoxBottom {display: none;}
+  .dotsBottom {display: none;}
+  .logoBoxTop {width: 100%; flex: content; left: 1vw; max-width: 1000px; top: 150px;}
+  .greetingBox {width: 100%; height: auto; left: 1px; flex: content; min-height: 100px; top: 150px;}
+  .greetingHeader {width: 80%; height: auto; flex: content; min-height: 100px; margin-bottom: 10px; font-size: 4em; line-height: 60px; text-align: center;}
+  .greetingParagraph {width: 70%; height: auto; flex: content; min-height: 100px; margin-top: 10px; margin-bottom: 10px; font-size: 2em; line-height: 32px; text-align: center;}
+  .videoEmbedBox {width: 85%; height: 100px; top: 150px; position: relative; left: auto; min-height: 520px; aspect-ratio: 16/9;}
+  .signupCTABox {width: 100%; flex: 1; top: auto; margin-top: 200px; position: relative; height: 180px;}
+  .signupCTAHeader {width: 100%; flex: 1; top: auto; position: relative; margin-bottom: 1px; font-size: 4em;}
+  .signupCTAParagraph {width: 100%; flex: 1; top: auto; position: relative; margin-top: 1px; font-size: 2em;}
+  .middleSection {width: 100%; top: 680px; position: relative; flex: content; background-size: contain;}
+  .middleSection:after {width: 100%; top: 680px;}
+  .wFormContainer {width: 90%; flex: 1; align-items: center; position: relative;}
+  .wFormTitle {width: 100%; flex: 1; font-size: 3em;}
+  input[type=text], select {width: 800px; font-size: 1.5em;}
+  .primaryAction {width: 200px;}
+  input[type=submit] {width: auto; position: relative; left: auto; flex: 1; margin-top: 30px  ; font-size: 2em;}
+  .yellowLineBreak {width: 50%; top: 750px; position: relative; z-index: 1; border: 3px solid #FFD963; margin-top: -30px; margin-bottom: -20px;}
+  .firstAmTitle {white-space: nowrap;}
+  .testimonialSection {width: 100%; position: relative; top: 800px; float: left;}
+  .testimonialCallout {width: 100%; top: 0px; position: relative; left: auto; font-size: 2em; margin-bottom: -80px; margin-top: -30px; line-height: 38px;}
+  .testimonialImage {width: 100%; height: 50px; top: 10px; position: relative; float: left;}
+  .carouselMainImage {width: 50%; top: 60px; position: relative; float: left; left: -280px;}
+  .carouselSection {width: 80%;  top: -100px; left: -10px; position: relative; margin-bottom: 800px; float: left; display: flex; flex-direction: row;}
+  .carouselContainer {width: 250px; height: 200px; top: 60px; position: relative; z-index: 2; margin-bottom: 20px; min-height: 250px; max-height: 250px; max-width: 250px; margin: 10px; align-items: center;}
+  .testimonialName {width: auto; left: auto; font-size: 2em; text-align: center; margin-bottom: -10px; margin-top: -10px;}
+  .testimonialText {width: auto; left: auto; font-size: 1em;}
+  footer {width: 100%; position: relative; margin-top: 0px;}
+  .logoBoxBottom {width: auto; flex: content; left: 2vw; top: 10px; margin-bottom: -10px;}
+  .legalLinks {margin-top: 50px; width: 100%; left: 5%;}
+  .techSupportContact {width: 100%; float: left;}
+  #testimonialOne, #testimonialTwo, #testimonialThree {display: inline;}
+}

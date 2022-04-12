@@ -1,0 +1,27 @@
+
+
+.contact-intro{
+    text-align: center;
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 4px;
+}
+
+textarea {
+    width: 100%;
+    padding: 4px;
+}
+
+.box-input-topic > select {
+    padding: 4px;
+}
+
+
+
+
+.box-input-submit {
+    margin-left: auto;
+    text-align: center;
+}

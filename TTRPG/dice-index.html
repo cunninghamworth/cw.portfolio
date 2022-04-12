@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles/styles-index.css" type="text/css">
+    <link rel="stylesheet" href="/TTRPG/styles-ttrpg-index.css" type="text/css">
+    <link rel="stylesheet" href="/TTRPG/styles-dice-roller.css" type="text/css">
+    <script src="/TTRPG/dice.js"></script>
+    <title>Dice Rollers | Cunningham Worth</title>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="page-header">
+            <div class="page-heading">
+                <nav class="page-nav-top">
+                    <a href="" class="nav-link" id="nav-link-main">Back to C|W</a>
+                    <a href="" class="nav-link" id="nav-link-ttrpg">TTRPG Catalogue</a>
+                    <div class="dropdown" id="nav-link-rollers">
+                        <button class="dropbtn">Dice Rollers &#x25BD;</button>
+                        <div class="dropdown-content">
+                            <a href="">d20 System</a>
+                            <a href="">Genesys</a>
+                        </div>
+                    </div>
+                    <div class="dropdown" id="nav-link-generators">
+                        <button class="dropbtn">5e Generators &#x25BD;</button>
+                        <div class="dropdown-content">
+                            <a href="">for GMs</a>
+                            <a href="">for Players</a>
+                        </div>
+                    </div>
+                    <div class="dropdown" id="nav-link-homebrew">
+                        <button class="dropbtn">Homebrew &#x25BD;</button>
+                        <div class="dropdown-content">
+                            <a href="">5e Rules & Mechanics</a>
+                            <a href="">5e Player Options</a>
+                            <a href="">5e Monsters</a>
+                            <a href="">5e Items & Equipment</a>
+                        </div>
+                    </div>
+                    <div class="dropdown" id="nav-link-other">
+                        <button class="dropbtn">Other Pages &#x25BD;</button>
+                        <div class="dropdown-content">
+                            <a href="">Adventures</a>
+                            <a href="">Publications</a>
+                            <a href="" id="linkout-trl">The Roiling League</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="page-main">
+            <section class="container-roller-table" id="container-quick-roll">
+                <div class="container-roller-box" id="quick-roll-section">
+                    <h2>Quick Roll</h2>
+                    <div id="quick-roll-buttons">
+                        <button class="btn-quick-roll" id="btn-quick-d2" onclick="rollQuickDie(2)">d2</button>
+                        <button class="btn-quick-roll" id="btn-quick-d3" onclick="rollQuickDie(3)">d3</button>
+                        <button class="btn-quick-roll" id="btn-quick-d4" onclick="rollQuickDie(4)">d4</button>
+                        <button class="btn-quick-roll" id="btn-quick-d6" onclick="rollQuickDie(6)">d6</button>
+                        <button class="btn-quick-roll" id="btn-quick-d8" onclick="rollQuickDie(8)">d8</button>
+                        <button class="btn-quick-roll" id="btn-quick-d10" onclick="rollQuickDie(10)">d10</button>
+                        <button class="btn-quick-roll" id="btn-quick-d12" onclick="rollQuickDie(12)">d12</button>
+                        <button class="btn-quick-roll" id="btn-quick-d20" onclick="rollQuickDie(20)">d20</button>
+                        <button class="btn-quick-roll" id="btn-quick-d100" onclick="rollQuickDie(100)">d100</button>
+                        <button class="btn-quick-roll" id="btn-quick-Adv" onclick="rollAdv()">ADV</button>
+                        <button class="btn-quick-roll" id="btn-quick-Dis" onclick="rollDis()">DIS</button>
+                    </div>
+                    <div id="quick-roll-results-box">
+                        <span class="off-dice-display"></span>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="page-footer">
+            <div class="page-copyright">
+                <p>&copy; Cunningham Worth</p>
+            </div>
+            <nav class="page-nav nav-bottom">
+                <a href="#">Home</a>
+                <a href="#">Coding</a>
+                <a href="#">Writing</a>
+                <a href="#">Creative</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </footer>
+    </div>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>

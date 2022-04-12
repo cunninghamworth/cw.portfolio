@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/TTRPG/styles-dice-stats.css">
+    <script src="dice.js"></script>
+    <title>Dice Roller</title>
+</head>
+<header>
+    <nav>
+    <div style="width:100px; height:100px; border:2px; background-color: #bbb;">
+        <img src="" alt="Roiling League Logo">
+    </div>
+        <h1>Tabletop Tools</h1>
+    </nav>
+</header>
+<body onload="javascript:loadStatDescription()">
+            <!-- QUICK ROLL -->
+
+            <div class="sectionLayout">
+                <h1>Dice Rollers</h1>
+            </div>
+            
+            
+            <div class="sectionLayout" style="border: none;">
+                <div id="quickRollSection">
+                    <h2>Quick Roll</h2>
+                    <div id="quickRollSectionButtons" style="border: none;">
+                        <button class="buttonQuickRoll" onclick="rollQuickDie(2)">d2</button>
+                        <button class="buttonQuickRoll" onclick="rollQuickDie(3)">d3</button>
+                        <button class="buttonQuickRoll" onclick="rollQuickDie(4)">d4</button>
+                        <button class="buttonQuickRoll" onclick="rollQuickDie(6)">d6</button>
+                        <button class="buttonQuickRoll" onclick="rollQuickDie(8)">d8</button>
+                        <button class="buttonQuickRoll" onclick="rollQuickDie(10)">d10</button>
+                        <br>
+                        <button class="buttonQuickRoll" onclick="rollQuickDie(12)">d12</button>
+                        <button class="buttonQuickRoll" onclick="rollQuickDie(20)">d20</button>
+                        <button class="buttonQuickRoll" onclick="rollQuickDie(100)">d100</button>
+                        <button class="buttonQuickRoll" onclick="rollAdv()">ADV</button>
+                        <button class="buttonQuickRoll" onclick="rollDis()">DIS</button>
+                        <button class="buttonQuickRoll" onclick="rollDie(2)">+</button>
+                    </div>
+                    <div id="quickRollResultsBox">
+                        <span class="offDiceDisplay"></span>
+                    </div>
+                </div>    
+
+            </div>
+            <hr>
+            <!--
+            <div class="rollResultsHistoryBox"></div>       
+            -->    
+
+                <!-- END QUICK ROLL -->
+
+                <!-- FULL ROLL -->
+            <h2>Custom Roll</h2>
+
+            <div class="sectionLayout"  id="customRollSection">
+                <form id="customRollInputForm">
+                    <input class="customRollInputField" id="numRollCountInput" type="text" name="Roll Count">
+                    <span style="font-size: 20px;"> * (</span>
+                    <input class="customRollInputField" id="numDiceInput" type="text" name="Dice Count">
+                    <select class="customRollInputField" id="numSidesInput" name="Sides Count">
+                        <option value="2">d2</option>
+                        <option value="3">d3</option>
+                        <option value="4">d4</option>
+                        <option value="6">d6</option>
+                        <option value="8">d8</option>
+                        <option value="10">d10</option>
+                        <option value="12">d12</option>
+                        <option value="20">d20</option>
+                        <option value="100">d100</option>
+                        </select>
+                    <span style="font-size: 20px;"> + </span>
+                    <input class="customRollInputField" id="numBonusInput" type="text" name="Bonus">
+                    <span style="font-size: 20px;"> ) + </span>
+                    <input class="customRollInputField" id="miscBonusInput" type="text" name="Misc Bonus"> 
+                    <input class="customRollInputField" id="buttonCustomRolls" type="button" onclick="rollCustomPool()" value="Roll">
+                    <div id="customRollResultsBox"></div>
+                </form>
+            </div>
+            <hr>
+            <!-- END FULL ROLL -->
+            <!-- MY ROLLS -->
+                <table class="sectionTable" cellpadding="0" cellspacing="0" style="display: none;">
+                <col width="15"><col width="100%">
+                <tr>
+                    <td rowspan="2" class="sectionCellL"><input type="button" id="btndivMyRolls" class="divtogglebtn" value="-" onclick="toggleDiv( 'divMyRolls' );" ></td>
+                    <td><span class="heading">My Rolls</span></td>
+                </tr>
+                <tr>
+                    <td class="sectionContent">
+                        <div id="divMyRolls" style="display:block;">
+                        <p>Save your custom full rolls here for quick access to those complex, yet frequently used rolls.</p>
+                        <div id="divMyRollTable"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sectionCellBL"></td>
+                    <td class="sectionCellB"></td>
+                </tr>
+                </table>
+                
+                
+                <!-- END MY ROLLS -->
+                
+
+                
+                <!-- STAT ROLL -->
+            <h2>Ability Score Roll</h2>
+            <div class="sectionLayout"  id="statRollSection"> <!-- stat roll div -->  
+                <!--
+
+                <p>Select a rolling method from the dropdown menu:</p>
+                <select class="rolStatsDropdown">
+                    <option value="">Classic (3d6)</option>
+                    <option value="">Standard (4d6, drop lowest)</option>
+                    <option value="">Standard - Kind (4d6, drop lowest, reroll 1s)</option>
+                    <option value="">Heroic (2d6+6)</option>
+                    <option value="">Heroic - Kind (2d6+6, reroll 1s)</option>
+                    <input id="buttonCustomRolls" type="button" onclick="rollCustomPool()" value="Roll">
+                </select>
+
+                -->
+
+                <!--
+                <button class="buttonStatRoll" onclick="printStatsClassic()">Classic (3d6)</button>
+                <button class="buttonStatRoll" onclick="rollStatStandard()">Standard (4d6, drop lowest)</button>
+                <button class="buttonStatRoll" onclick="rollStatHeroic()">Heroic (2d6+6)</button>
+                -->
+
+                <!--
+                <select name="statTypeSelect" >
+                    <option value="statRollClassic">Classic (3d6)</option>
+                    <option value="statRollStandard">Standard (4d6, drop lowest)</option>
+                    <option value="statRollHeroic">Heroic (2d6+6)</option>    
+                </select>
+                -->
+                <div id="statRollTypeSelect">
+                    <div style="border: none;">
+                        <form action="javascript:rollStatScores();">
+                            <fieldset style="border: none;">
+                                <p>Select a rolling method from the following:</p>
+                                <label for="radioRollHeroic">
+                                    <input type="radio" name="radioStatType" id="radioRollClassic" value="statRollClassic" onclick="setStatType(statType.statClassic)">Classic (3d6)</input>
+                                </label>
+                                <br>
+                                <!--
+                                <input type="radio" name="radioStatType" id="radioRollClassicKind" value="statRollClassicKind">
+                                -->
+                                
+                                <label for="radioRollHeroic">
+                                    <input type="radio" name="radioStatType" id="radioRollStandard" value="statRollStandard" onclick="setStatType(statType.statStandard)">Standard (4d6, drop lowest)</input>
+                                </label>
+                                <br>
+                                <!--
+                                <input type="radio" name="radioStatType" id="radioRollStandardKind" value="statRollStandardKind">
+                                -->
+
+                                <label for="radioRollHeroic">
+                                    <input type="radio" name="radioStatType" id="radioRollHeroic" value="statRollHeroic" onclick="setStatType(statType.statHeroic)">Heroic (2d6+6)</input>
+                                </label>
+                                <br><br>
+
+                                <!--
+                                <input type="radio" name="radioStatType" id="radioRollHeroicKind" value="statRollHeroicKind">
+                                -->
+                                
+                                <label for="pointBuyEquivalentCheckbox">
+                                    <input type="checkbox" id="pointBuyEquivalentCheckbox"> Include Point Buy Equivalent (PBE) </input>
+                                </label>
+                                <br>
+                                <label for="pointBuyLimitsCheckbox">
+                                    <input type="checkbox" class="pointBuyLimitsBox" id="pointBuyLimitsCheckbox" onclick="showPointBuyLimitsOptions()"> Include Point Buy Limits - coming soon!</input>
+                                </label>
+                                <br>
+                                <label for="radioPointBuyStandard" id="pointBuyLimitsStandardLabel" style="display: none;"> 
+                                    <input type="radio" class="pointBuyLimitsRadio" style="display: none;" name="radioPointBuyType" id="radioPointBuyStandard" value="pointBuyStandard" onclick="setPointBuyLimits(pointBuyDescription.pointStandard)"> Standard Array - coming soon!
+                                </label>
+                                <br>
+                                <label for="radioPointBuyFull" id="pointBuyLimitsFullLabel" style="display: none;">
+                                    <input type="radio" class="pointBuyLimitsRadio" style="display: none;" name="radioPointBuyType" id="radioPointBuyFull" value="pointBuyFull" onclick="setPointBuyLimits(pointBuyDescription.pointFull)"> Full Array - coming soon!
+                                </label>
+                                
+                                <br>
+                        <!--
+                                <label for="customMinMaxScoresCheckbox">
+                                    <input type="checkbox" class="customMinMaxScores" id="customMinMaxScoresCheckbox" onclick="showCustomMinMaxScoresOptions()"> Custom Min/Max Scores? - coming soon!</input>
+                                </label>
+                                <br>
+                                <label for="customMinMaxScoreNumber" id="customMinMaxScoreNumberLabel" style="display: none;"> 
+                                    <input type="number" class="customMinMaxScoreNumber" style="display: none;" name="numberCustomMinMaxScores" id="numberCustomMinMaxScores" value="minMaxScore" onclick="setPointBuyLimits(pointBuyDescription.pointStandard)">
+                                </label>
+                                
+                                <br>
+                                
+                                <label for="">
+                                    <select name="" id="">Min</select>
+                                </label>
+                                <label for="">
+                                    <select name="" id="">Max</select>
+                                </label>
+                        -->
+                                <label for="rollStatScoresSubmit">
+                                    <input type="submit" id="rollStatScoresSubmit" value="ROLL">
+                                </label>
+                        
+                            </fieldset>
+                        </form>
+                    </div>
+                    <hr>
+                    <h4 style="margin: 10px;">Method Description:</h4>
+                    <div id="statTypeDescription">
+                        <p></p>
+                    </div>
+                    <hr>
+                <!--
+                    <h4 style="margin: 10px;">Point Buy Limits Description:</h4>
+                    <div id="pointBuyLimitsDescription">
+                        <p></p>
+                    </div>
+                -->
+                </div>
+                
+                <!--
+                <button class="buttonStatRoll" onclick="rollDie(2)">d2</button>
+                <button class="buttonStatRoll" onclick="rollDie(2)">d2</button>
+                -->
+
+                <div>
+                    <table id="statRollTable">
+                        <tr>
+                            <th style="border: none;">&nbsp;</th>
+                            <th>SCORE</th>
+                            <th>MOD</th>
+                            <th>PBE</th>
+                            <th>DICE ROLLED</th>
+                        </tr>
+                        <tr>
+                            <td style="border: none;"><strong>&nbsp;</strong></td>
+                            <td class="statCellResults" id="statRoll1"></td>
+                            <td class="statCellResults" id="statRoll1Mod"></td>
+                            <td class="statCellResults" id="statRoll1Points"></td>
+                            <td class="statCellResults" id="statRoll1Dice"></td>
+                        </tr>
+                        <tr> 
+                            <td style="border: none;"><strong>&nbsp;</strong></td>
+                            <td class="statCellResults" id="statRoll2"></td>
+                            <td class="statCellResults" id="statRoll2Mod"></td>
+                            <td class="statCellResults" id="statRoll2Points"></td>
+                            <td class="statCellResults" id="statRoll2Dice"></td>
+                        </tr>
+                        <tr>
+                            <td style="border: none;"><strong>&nbsp;</strong></td>
+                            <td class="statCellResults" id="statRoll3"></td>
+                            <td class="statCellResults" id="statRoll3Mod"></td>
+                            <td class="statCellResults" id="statRoll3Points"></td>
+                            <td class="statCellResults" id="statRoll3Dice"></td>
+                        </tr>
+                        <tr>
+                            <td style="border: none;"><strong>&nbsp;</strong></td>
+                            <td class="statCellResults" id="statRoll4"></td>
+                            <td class="statCellResults" id="statRoll4Mod"></td>
+                            <td class="statCellResults" id="statRoll4Points"></td>
+                            <td class="statCellResults" id="statRoll4Dice"></td>
+                        </tr>
+                        <tr>
+                            <td style="border: none;"><strong>&nbsp;</strong></td>
+                            <td class="statCellResults" id="statRoll5"></td>
+                            <td class="statCellResults" id="statRoll5Mod"></td>
+                            <td class="statCellResults" id="statRoll5Points"></td>
+                            <td class="statCellResults" id="statRoll5Dice"></td>
+                        </tr>
+                        <tr>
+                            <td style="border: none;"><strong>&nbsp;</strong></td>
+                            <td class="statCellResults" id="statRoll6"></td>
+                            <td class="statCellResults" id="statRoll6Mod"></td>
+                            <td class="statCellResults" id="statRoll6Points"></td>
+                            <td class="statCellResults" id="statRoll6Dice"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>TOTAL</strong></td>
+                            <td class="statCellResults" id="statRollTotal"></td>
+                            <td class="statCellResults" id="statModTotal"></td>
+                            <td class="statCellResults" id="statPointsTotal"></td>
+                        </tr>
+                    </table>
+                </div>
+                <!--
+                <table id="statRollTable">
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th style="table-layout: fixed;">1</th>
+                        <th style="table-layout: fixed;">2</th>
+                        <th style="table-layout: fixed;">3</th>
+                        <th style="table-layout: fixed;">4</th>
+                        <th style="table-layout: fixed;">5</th>
+                        <th style="table-layout: fixed;">6</th>
+                        <th class="statCellWide">TOTAL</th>
+                    </tr>
+                    <tr>
+                        <td class="statCellWide"><strong>Roll</strong></td>
+                        <td class="statCell" id="statRoll1"></td>
+                        <td class="statCell" id="statRoll2"></td>
+                        <td class="statCell" id="statRoll3"></td>
+                        <td class="statCell" id="statRoll4"></td>
+                        <td class="statCell" id="statRoll5"></td>
+                        <td class="statCell" id="statRoll6"></td>
+                        <td id="statRollTotal"></td>
+                    </tr>
+                    <tr>
+                        <td class="statCellWide"><strong>Modifier</strong></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td id="statModsTotal"></td>
+                    </tr>
+                    <tr>
+                        <td class="statCellWide"><strong>Points</strong></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td id="statPointsTotal"></td>
+                    </tr>
+                </table>
+                -->
+
+            </div> 
+                <!-- END STAT ROLL -->
+                <table id="rollHistoryTable" cellspacing="0" style="display: none;">
+                    <tr>
+                        <th>Roll History</th>
+                    </tr>
+                    <tr>
+                
+                        <td>
+                            <textarea id="rollhistory" cols="40" rows="20" readonly="readonly"></textarea>
+                            <script type="text/javascript">
+                                document.getElementById('rollhistory').value = ""
+                            </script>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center"><input type="button" id="btnClearRollHistory" onclick="clearRollHistory();" value="Clear Roll History"></td>
+                    </tr>
+                </table>
+            </div>
+    </body>
+</html>

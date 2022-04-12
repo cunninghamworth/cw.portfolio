@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="/styles-index.css">
+    <link rel="stylesheet" href="/styles-dice-roller.css">
+    <!--[if IE]><link rel="shortcut icon" href="/images/profile.png" type="image/x-icon"><![endif]-->
+    <link rel="icon" href="/images/profile.png" type="image/x-icon">
+    <title>Roiling League - Custom Dice Roll</title>
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="header">
+            <nav>
+                <a href="/"><img class="logo" src="/images/Twitch Files-02.png" alt=""></a>
+                <a href="javascript:void(0);" class="nav-option" id="nav-option-rollers" onclick="navRollerToggle()">Dice Rollers</a>
+                <div class="nav-menu" id="nav-rollers">
+                    <a class="nav-menu-option" href="/dice-rollers-main.html">One-Page</a>
+                    <a class="nav-menu-option" href="/dice-quick.html">Quick Roller</a>
+                    <a class="nav-menu-option" href="/dice-custom.html">Custom Roller</a>
+                    <a class="nav-menu-option" href="/dice-stats.html">Stat Roller</a>
+                </div>
+                <a href="javascript:void(0);" class="nav-option" id="nav-option-generators" onclick="navGeneratorToggle()">Generators</a>
+                <div class="nav-menu" id="nav-generators">
+                    <a class="nav-menu-option" href="">Catalogue</a>
+                    <a class="nav-menu-option" href="">Player Characters</a>
+                    <a class="nav-menu-option" href="">NPCs</a>
+                    <a class="nav-menu-option" href="">Monsters</a>
+                    <a class="nav-menu-option" href="">Magic Items</a>
+                    <a class="nav-menu-option" href="">Settlements</a>
+                    <a class="nav-menu-option" href="">Adventures</a>
+                    <a class="nav-menu-option" href="">Settlements</a>
+                </div>
+                <a href="javascript:void(0);" class="nav-option" id="nav-option-homebrew" onclick="navHomebrewToggle()">Homebrew</a>
+                <div class="nav-menu" id="nav-homebrew">
+                    <a class="nav-menu-option" href="">Catalogue</a>
+                    <a class="nav-menu-option" href="">Magic Items</a>
+                    <a class="nav-menu-option" href="">Monsters</a>
+                    <a class="nav-menu-option" href="">Subclasses</a>
+                    <a class="nav-menu-option" href="">Variant Rules</a>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <h1>Custom Dice Roll</h1>
+            <hr>
+            <section class="custom-roll">
+                <form id="customRollInputForm">
+                    <input class="customRollInputField" id="numRollCountInput" type="text" name="Roll Count">
+                    <span style="font-size: 20px;"> * (</span>
+                    <input class="customRollInputField" id="numDiceInput" type="text" name="Dice Count">
+                    <select class="customRollInputField" id="numSidesInput" name="Sides Count">
+                        <option value="2">d2</option>
+                        <option value="3">d3</option>
+                        <option value="4">d4</option>
+                        <option value="6">d6</option>
+                        <option value="8">d8</option>
+                        <option value="10">d10</option>
+                        <option value="12">d12</option>
+                        <option value="20">d20</option>
+                        <option value="100">d100</option>
+                        </select>
+                    <span style="font-size: 20px;"> + </span>
+                    <input class="customRollInputField" id="numBonusInput" type="text" name="Bonus">
+                    <span style="font-size: 20px;"> ) + </span>
+                    <input class="customRollInputField" id="miscBonusInput" type="text" name="Misc Bonus"> 
+                    <input class="customRollInputField" id="buttonCustomRolls" type="button" onclick="rollCustomPool()" value="Roll">
+                    <div id="customRollResultsBox"></div>
+                </form>
+            </section>
+            <hr>
+        </main>
+        <footer class="footer">
+            <section class="footer-linkouts">
+                <a href="">Disclaimers</a>
+                <a href="">OGL Info</a>
+                <a href="">Contact</a>
+            </section>
+            <section class="footer-copyright">
+
+            </section>
+        </footer>
+    </div>
+    <script src="/js-index.js"></script>
+    <script src="/dice.js"></script>
+</body>
+</html>
